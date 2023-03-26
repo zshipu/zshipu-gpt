@@ -6,15 +6,24 @@
     <description>Recent content in Tags on GPT资讯  --  知识铺</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 26 Mar 2023 09:09:31 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 26 Mar 2023 09:39:31 +0800</lastBuildDate>
     
 	<atom:link href="https://gpt.zshipu.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>机器学习</title>
+      <link>https://gpt.zshipu.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Sun, 26 Mar 2023 09:39:31 +0800</pubDate>
+      
+      <guid>https://gpt.zshipu.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>GPT</title>
       <link>https://gpt.zshipu.com/tags/GPT/</link>
-      <pubDate>Sun, 26 Mar 2023 09:09:31 +0800</pubDate>
+      <pubDate>Sun, 26 Mar 2023 09:19:31 +0800</pubDate>
       
       <guid>https://gpt.zshipu.com/tags/GPT/</guid>
       <description></description>
