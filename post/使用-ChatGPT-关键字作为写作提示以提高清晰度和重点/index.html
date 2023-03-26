@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>使用 ChatGPT 关键字作为写作提示，以提高清晰度和重点 | GPT资讯  --  知识铺</title>
+    <meta property="og:title" content="使用 ChatGPT 关键字作为写作提示，以提高清晰度和重点 - GPT资讯  --  知识铺">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2023-03-26T09:07:31&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2023-03-26T09:07:31&#43;08:00'>
+        
+    <meta name="Keywords" content="golang,go语言,go语言笔记,知识铺,java,android,博客,项目管理,python,React、Next、Vue、软件架构,公众号,小程序">
+    <meta name="description" content="使用 ChatGPT 关键字作为写作提示，以提高清晰度和重点">
+        <meta name="author" content="知识铺">
+        
+    <meta property="og:url" content="https://gpt.zshipu.com/post/%E4%BD%BF%E7%94%A8-ChatGPT-%E5%85%B3%E9%94%AE%E5%AD%97%E4%BD%9C%E4%B8%BA%E5%86%99%E4%BD%9C%E6%8F%90%E7%A4%BA%E4%BB%A5%E6%8F%90%E9%AB%98%E6%B8%85%E6%99%B0%E5%BA%A6%E5%92%8C%E9%87%8D%E7%82%B9/">
+    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    <script data-ad-client="ca-pub-2874221941555456" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WLWJSST');</script>
+    
+</head>
+
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLWJSST"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://gpt.zshipu.com/">
+                        GPT资讯  --  知识铺
+                    </a>
+                
+                <p class="description">专注于Android、Java、Go语言(golang)、React、Next、Vue、移动互联网、项目管理、软件架构</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://gpt.zshipu.com/">首页</a>
+                    
+                    <a  href="https://gpt.zshipu.com/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://gpt.zshipu.com/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#介绍">介绍</a></li>
+<li><a href="#重新描述">重新描述</a></li>
+<li><a href="#继续">继续</a></li>
+<li><a href="#总结">总结</a></li>
+<li><a href="#关键思想">关键思想</a></li>
+<li><a href="#标题">标题</a></li>
+<li><a href="#结论">结论</a></li>
+</ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">使用 ChatGPT 关键字作为写作提示，以提高清晰度和重点</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2023年3月26日
+        </date>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            
+
+<h1 id="介绍">介绍</h1>
+
+<p>使用关键字作为命令是生成编写提示的有效方法。例如，在在线平台Discord中，命令“/imagine”用于启动提示。同样，通过使用诸如“改写”、“继续”、“简化”、“关键思想”和“标题”等关键字，可以开始提示，鼓励作者专注于他们写作的特定方面。根据我的经验，这些关键字对于生成与我最初的想法密切相关的高质量书面内容特别有帮助。</p>
+
+<h1 id="重新描述">重新描述</h1>
+
+<p>以关键字“改写：”开头提示可以产生书面文本，准确清晰地有效地传达您的预期想法。此关键字提示重写所写内容的更精细版本。通过利用这个关键词，您可以提高书面作品的质量，并确保您的想法有效地传达给您的听众。</p>
+
+<h1 id="继续">继续</h1>
+
+<p>关键字“继续”也可以成为生成提示的强大工具，鼓励作者在现有想法的基础上进行构建。通过以“继续”开始提示，提示作者扩展他们以前的想法或更详细地探索他们写作的特定方面。通过使用此关键字，作者可以快速自动完成文本段落，从而节省时间。</p>
+
+<p>此外，关键字“继续”可以单独使用，以提示 ChatGPT 在作者先前输出的基础上构建并继续相同的思路。当有一个要讨论的项目列表并且作者想要解决尚未写的其余项目时，这尤其有用。通过使用这个关键词，作家可以轻松地从他们离开的地方继续，并以有凝聚力和有组织的方式无缝地继续他们的写作。</p>
+
+<h1 id="总结">总结</h1>
+
+<p>关键字“总结”对于想要将写作浓缩成更短、更简洁的格式同时仍然传达相同想法的作家来说可能是一个有用的提示。以“总结”开始提示鼓励作者确定他们想要传达的要点和想法，并以清晰简洁的方式呈现它们。通过使用这个关键词，作家可以有效地将他们的写作提炼成最重要的元素，同时仍然传达相同的信息和想法。</p>
+
+<h1 id="关键思想">关键思想</h1>
+
+<p>“关键思想”关键字还可以提示 ChatGPT 生成一个简短的句子列表，总结文本中存在的主要思想。这对于正在寻找一种快速简便的方法来理解写作中提出的关键概念的作家来说非常有益。通过将内容分解为项目符号，可以更轻松地获得材料的概述并确定重要的主题和想法。这些关键思想也可以在以后用于与其他概念建立联系，从而更容易建立对主题的全面理解。</p>
+
+<h1 id="标题">标题</h1>
+
+<p>最后，以“title”关键字开头的提示对于可能正在努力为其书面作品提出引人注目且准确的标题的作家来说可能是一个有用的工具。这个关键词可以帮助作家想出一个准确反映他们作品内容的标题，同时也引人入胜和引人注目。</p>
+
+<h1 id="结论">结论</h1>
+
+<p>总之，对于希望生成有效提示并改善写作过程的作家来说，使用关键字作为命令可以成为一种强大的工具。通过使用“改写”、“继续”、“总结”、“关键思想”和“标题”等关键词，作家可以专注于他们的预期信息，创建清晰且引人入胜的书面内容，并有效地将他们的想法传达给受众。</p>
+
+        </div>
+
+        <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/sblig" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/sblig', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">订阅每周最新React技术和动向</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="邮箱订阅" /> </form>
+
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://gpt.zshipu.com/">知识铺</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://gpt.zshipu.com/post/%E4%BD%BF%E7%94%A8-ChatGPT-%E5%85%B3%E9%94%AE%E5%AD%97%E4%BD%9C%E4%B8%BA%E5%86%99%E4%BD%9C%E6%8F%90%E7%A4%BA%E4%BB%A5%E6%8F%90%E9%AB%98%E6%B8%85%E6%99%B0%E5%BA%A6%E5%92%8C%E9%87%8D%E7%82%B9/">https://gpt.zshipu.com/post/%E4%BD%BF%E7%94%A8-ChatGPT-%E5%85%B3%E9%94%AE%E5%AD%97%E4%BD%9C%E4%B8%BA%E5%86%99%E4%BD%9C%E6%8F%90%E7%A4%BA%E4%BB%A5%E6%8F%90%E9%AB%98%E6%B8%85%E6%99%B0%E5%BA%A6%E5%92%8C%E9%87%8D%E7%82%B9/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+        <li><strong>免责声明：</strong>本页面内容均来源于站内编辑发布，部分信息来源互联网，并不意味着本站赞同其观点或者证实其内容的真实性，如涉及版权等问题，请立即联系客服进行更改或删除，保证您的合法权益。转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。也可以邮件至 sblig@126.com</li>
+    </ul>
+</div>
+<br/>
+
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/about/">关于我</a></li>
+        
+        <li><a href="/archives/">归档</a></li>
+        
+        <li><a href="/search/">搜索</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='/tags/GPT'>GPT</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "zshipu/gpt"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2023 <a href="https://gpt.zshipu.com/">GPT资讯  --  知识铺 By 知识铺</a>
+        
+        | <a rel="nofollow" target="_blank" href="https://beian.miit.gov.cn/">浙 ICP 备19032823号-1</a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://gpt.zshipu.com/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://gpt.zshipu.com/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://gpt.zshipu.com/post/%E4%BD%BF%E7%94%A8-ChatGPT-%E5%85%B3%E9%94%AE%E5%AD%97%E4%BD%9C%E4%B8%BA%E5%86%99%E4%BD%9C%E6%8F%90%E7%A4%BA%E4%BB%A5%E6%8F%90%E9%AB%98%E6%B8%85%E6%99%B0%E5%BA%A6%E5%92%8C%E9%87%8D%E7%82%B9/" title="使用 ChatGPT 关键字作为写作提示，以提高清晰度和重点">使用 ChatGPT 关键字作为写作提示，以提高清晰度和重点</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">福利派送</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?source=5176.11533457&amp;userCode=tzm8r4hc" title="【2019双12】ALL IN CLoud 低至1折" target="_blank" style="color:red">
+                
+                    <img src="https://img.alicdn.com/tfs/TB1_rYHo7P2gK0jSZPxXXacQpXa-690-388.jpg">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?source=5176.11533457&amp;userCode=tzm8r4hc" title="助力产业智慧升级，云服务器首年88元起，更有千元代金券礼包免费领！" target="_blank" style="color:red">
+                
+                    <img src="https://upload-dianshi-1255598498.file.myqcloud.com/345-7c71532bd4935fbdd9a67c1a71e577b1767b805c.200%E7%89%88%E6%9C%ACB.jpg">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?source=5176.11533457&amp;userCode=tzm8r4hc" title="【渠道专享低折扣】11月特惠 限时2折" target="_blank" style="color:red">
+                
+                    <img src="https://img.alicdn.com/tfs/TB1hblJl7Y2gK0jSZFgXXc5OFXa-750-400.jpg">
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
+<ul class="widget-list">
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/tags/'>标签</a></h3>
+<div class="tagcloud">
+    
+    <a href="https://gpt.zshipu.com/tags/GPT/">GPT</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://geek.zshipu.com//" title="知识铺的博客">知识铺的博客</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://gpt.zshipu.com/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
