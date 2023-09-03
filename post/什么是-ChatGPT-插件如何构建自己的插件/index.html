@@ -146,16 +146,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
         <nav id="TableOfContents">
-<ul>
-<li><a href="#介绍">介绍</a></li>
-<li><a href="#开始"><strong>开始</strong></a>
-<ul>
-<li><a href="#插件清单">插件清单</a></li>
-<li><a href="#开放接口定义">开放接口定义</a></li>
-<li><a href="#运行插件">运行插件</a></li>
-</ul></li>
-<li><a href="#结论">结论</a></li>
-</ul>
+  <ul>
+    <li><a href="#插件清单">插件清单</a></li>
+    <li><a href="#开放接口定义">开放接口定义</a></li>
+    <li><a href="#运行插件">运行插件</a></li>
+  </ul>
 </nav>
     </div>
 </div>
@@ -202,44 +197,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
         
         <div class="post-content">
-            
-
-<p>OpenAI刚刚宣布了他们在ChatGPT中的新功能。这是迄今为止ChatGPT最令人兴奋的功能。ChatGPT 根据截至 2021 年的数据进行训练，它只能根据该数据提供结果。现在为了与实时数据交互，OpenAI引入了ChatGPT插件。</p>
-
+            <p>OpenAI刚刚宣布了他们在ChatGPT中的新功能。这是迄今为止ChatGPT最令人兴奋的功能。ChatGPT 根据截至 2021 年的数据进行训练，它只能根据该数据提供结果。现在为了与实时数据交互，OpenAI引入了ChatGPT插件。</p>
 <h1 id="介绍">介绍</h1>
-
 <p>插件是专门为语言模型设计的工具，以安全为核心原则，帮助 ChatGPT 访问最新信息、运行计算或使用第三方服务。</p>
-
 <p>OpenAI插件将ChatGPT连接到第三方应用程序。这些插件使 ChatGPT 能够与开发人员定义的 API 进行交互，从而增强 ChatGPT 的功能并允许它执行广泛的操作。</p>
-
 <ul>
 <li>插件可以允许 ChatGPT 执行以下操作：</li>
 <li>检索实时信息;例如，体育比分、股票价格、最新消息等。</li>
 <li>检索知识库信息;例如，公司文档、个人笔记等。</li>
 <li>代表用户执行操作;例如，预订航班、订购食物等。</li>
 </ul>
-
 <p>OpenAI的ChatGPT是一个强大的语言模型，使您能够与AI进行交互式对话。如果您可以进一步扩展其功能会怎样？在这篇博文中，我们将指导您完成创建自己的 ChatGPT 插件的过程，并提供一个专注于潜在客户生成的具体示例。最后，您将有能力构建适合您独特需求的自定义插件。</p>
-
 <h1 id="开始"><strong>开始</strong></h1>
-
 <p>创建 ChatGPT 插件涉及三个主要步骤：</p>
-
 <ol>
 <li>构建接口</li>
 <li>以 OpenAPI yaml 或 JSON 格式记录 API</li>
 <li>创建一个 JSON 清单文件，用于定义插件的相关元数据</li>
 </ol>
-
 <p>在这篇博文中，我们将介绍创建潜在客户生成插件的过程，这将使 ChatGPT 能够与潜在客户生成服务进行交互，允许用户直接从与 AI 的对话中生成潜在客户。</p>
-
 <h2 id="插件清单">插件清单</h2>
-
 <p>每个插件都需要一个 ai-plugin.json 文件，该文件必须托管在 API 的域中。清单文件包含有关插件的基本信息，例如其名称、描述、身份验证方法和 API 规范。</p>
-
 <p>以下是潜在客户生成插件的最小清单示例：</p>
-
-<pre><code>{
+<pre tabindex="0"><code>{
   “schema_version”： “v1”， “name_for_human”： “潜在客户生成插件”， “name_for_model”： “潜在客户”，
 
 
@@ -257,19 +237,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
  “legal_info_url”： “https://www.yourdomain.com/legal”
 }
-</code></pre>
-
-<h2 id="开放接口定义">开放接口定义</h2>
-
+</code></pre><h2 id="开放接口定义">开放接口定义</h2>
 <p>下一步是为您的 API 创建一个 OpenAPI 规范。这是 ChatGPT 如何与您的潜在客户生成服务交互的蓝图。OpenAPI 规范应定义可用的端点及其预期的输入和输出。</p>
-
 <p>以下是潜在客户生成插件的 OpenAPI 定义的基本示例：</p>
-
-<pre><code>openapi: 3.0.1
+<pre tabindex="0"><code>openapi: 3.0.1
 info:
   title: Lead Generation Plugin
   description: A plugin that generates leads from various sources using ChatGPT.
-  version: 'v1'
+  version: &#39;v1&#39;
 servers:
   - url: http://localhost:3333
 paths:
@@ -278,12 +253,12 @@ paths:
       operationId: getLeads
       summary: Get a list of leads
       responses:
-        &quot;200&quot;:
+        &#34;200&#34;:
           description: OK
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/getLeadsResponse'
+                $ref: &#39;#/components/schemas/getLeadsResponse&#39;
 components:
   schemas:
     getLeadsResponse:
@@ -292,7 +267,7 @@ components:
         leads:
           type: array
           items:
-            $ref: '#/components/schemas/Lead'
+            $ref: &#39;#/components/schemas/Lead&#39;
           description: The list of leads.
     Lead:
       type: object
@@ -303,12 +278,8 @@ components:
           type: string
         phone:
           type: string
-</code></pre>
-
-<h2 id="运行插件">运行插件</h2>
-
+</code></pre><h2 id="运行插件">运行插件</h2>
 <p>为潜在客户生成插件创建 API、清单文件和 OpenAPI 规范后，您现在就可以通过 ChatGPT UI 连接插件了。具体操作方法如下：</p>
-
 <ol>
 <li>本地插件与远程插件：您的插件可能运行在两个不同的位置，一个是本地开发环境，另一个是远程服务器。
 <strong>a</strong>. 如果您正在运行 API 的本地版本，则可以将插件接口指向该本地设置。要将插件与 ChatGPT 连接，您可以导航到插件商店，然后选择“安装未经验证的插件”。
@@ -317,11 +288,8 @@ components:
 <li>使用潜在客户生成插件：与 ChatGPT 开始对话，您现在可以通过在对话中提及它或提供针对插件特定功能的说明来使用您的潜在客户生成插件。例如，您可以说：“使用关键字&rsquo;数字营销&rsquo;的潜在客户生成插件生成潜在客户。</li>
 <li>查看生成的潜在客户：ChatGPT 将向您的插件 API 发送请求，插件将返回生成的潜在客户。然后，潜在客户将显示在 ChatGPT 对话中，允许您查看并采取适当的操作。</li>
 </ol>
-
 <p>通过执行以下步骤，您可以使用 ChatGPT 成功运行潜在客户生成插件，并利用 AI 的功能在您的目标市场中寻找潜在潜在客户。</p>
-
 <h1 id="结论">结论</h1>
-
 <p>总之，使用 ChatGPT 创建和集成自定义插件可以打开一个充满可能性的世界，允许您扩展 AI 的功能并根据您的特定需求定制其功能。在这篇博客中，我们以开发潜在客户生成插件的过程为例，展示了如何创建 API、编写清单文件以及将插件连接到 ChatGPT。通过遵循这些步骤并了解基本概念，您可以创建自己的插件来满足各种用例，增强您的 ChatGPT 体验并释放这个强大语言模型的全部潜力。</p>
 
         </div>
