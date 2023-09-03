@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>搜索 | GPT资讯  --  知识铺</title>
-    <meta property="og:title" content="搜索 - GPT资讯  --  知识铺">
+    <title>Posts | GPT资讯  --  知识铺</title>
+    <meta property="og:title" content="Posts - GPT资讯  --  知识铺">
     <meta property="og:type" content="article">
         
         
     <meta name="Keywords" content="golang,go语言,go语言笔记,知识铺,java,android,博客,项目管理,python,React、Next、Vue、软件架构,公众号,小程序">
-    <meta name="description" content="搜索页面">
+    <meta name="description" content="Posts">
         
     <meta name="author" content="知识铺">
-    <meta property="og:url" content="https://gpt.zshipu.com/search/">
+    <meta property="og:url" content="https://gpt.zshipu.com/post/">
     <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <link rel="alternate" type="application/rss+xml+https://gpt.zshipu.com/post/index.xml" href="GPT资讯  --  知识铺" title="%!s(MISSING)" />
     <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -58,7 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="" href="https://gpt.zshipu.com/">首页</a>
+                    <a class="current" href="https://gpt.zshipu.com/">首页</a>
                     
                     <a  href="https://gpt.zshipu.com/archives/" title="归档">归档</a>
                     
@@ -77,71 +78,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-8" id="main">
                     
 <div class="res-cons">
-    <h3 class="archive-title">
-        搜索
-        <span class="keyword">哈哈</span>
-        的结果
-    </h3>
-
+    
+    
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="链接">标题</a>
+                <a href="https://gpt.zshipu.com/post/%E4%BD%BF%E7%94%A8-ChatGPT-%E5%85%B3%E9%94%AE%E5%AD%97%E4%BD%9C%E4%B8%BA%E5%86%99%E4%BD%9C%E6%8F%90%E7%A4%BA%E4%BB%A5%E6%8F%90%E9%AB%98%E6%B8%85%E6%99%B0%E5%BA%A6%E5%92%8C%E9%87%8D%E7%82%B9/" title="使用 ChatGPT 关键字作为写作提示，以提高清晰度和重点">使用 ChatGPT 关键字作为写作提示，以提高清晰度和重点</a>
             </h1>
         </header>
         <date class="post-meta meta-date">
-            2019年12月01日
+            2023年3月26日
         </date>
+        
         <div class="post-content">
-            概要……
-            <p class="readmore"><a href="链接">阅读全文</a></p>
+            介绍 使用关键字作为命令是生成编写提示的有效方法。例如，在在线平台Discord中，命令“/imagine”用于启动提示。同样，通过使用诸如“改写”、“继续”、“简化”、“关键思想”和“标题”等关键字，可以开始提示，鼓励作者专注于他们写作的特定方面。根据我的经验，这些关键字对于生成……
         </div>
+        <p class="readmore"><a href="https://gpt.zshipu.com/post/%E4%BD%BF%E7%94%A8-ChatGPT-%E5%85%B3%E9%94%AE%E5%AD%97%E4%BD%9C%E4%B8%BA%E5%86%99%E4%BD%9C%E6%8F%90%E7%A4%BA%E4%BB%A5%E6%8F%90%E9%AB%98%E6%B8%85%E6%99%B0%E5%BA%A6%E5%92%8C%E9%87%8D%E7%82%B9/">阅读全文</a></p>
     </article>
+    
+    
+    
+
+
+
+<ol class="page-navigator">
+    
+    <li class="prev">
+        <a href="https://gpt.zshipu.com/post/">上一页</a>
+    </li>
+    
+
+    
+    <li >
+        <a href="https://gpt.zshipu.com/post/">1</a>
+    </li>
+    
+    <li  class="current">
+        <a href="https://gpt.zshipu.com/post/page/2/">2</a>
+    </li>
+    
+
+    
+</ol>
+
+
 
 </div>
-
-<script type="text/javascript">
-
-    var getUrlParameter = function getUrlParameter(sParam) {
-        var sPageURL = window.location.search.substring(1),
-            sURLVariables = sPageURL.split('&'),
-            sParameterName,
-            i;
-
-        for (i = 0; i < sURLVariables.length; i++) {
-            sParameterName = sURLVariables[i].split('=');
-
-            if (sParameterName[0] === sParam) {
-                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-            }
-        }
-    };
-
-    $(document).ready(function () {
-        var q = getUrlParameter("q");
-        $("span.keyword").text(q);
-        $("article.post").remove();
-        $.ajax({
-            url: 'https:\/\/gpt.zshipu.com\/index.xml',
-            dataType: "xml",
-            success: function (data) {
-                $(data).find("item").each(function () {
-                    var item = $(this);
-                    var title = item.find("title").text();
-                    if (title.toLowerCase().indexOf(q.toLowerCase()) >= 0) {
-                        var url = item.find("link").text();
-                        var searchItem = `<article class="post"><header><h1 class="post-title"><a href="` + url + `">` + title + `</a></h1></header>`;
-                        var pubDate = new Date(item.find("pubDate").text())
-                        searchItem += `<date class="post-meta meta-date">` + pubDate.getFullYear() + `年` + (pubDate.getMonth() + 1) + `月` + pubDate.getDate() + `日</date>`;
-                        searchItem += `<div class="post-content">` + item.find("description").text() + `……<p class="readmore"><a href="` + url + `">阅读全文</a></p></div></article>`;
-
-                        $("div.res-cons").append(searchItem);
-                    }
-                });
-            }
-        });
-    });
-</script>
 
                     <footer id="footer">
     <div>
@@ -165,16 +147,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 
 
-    
-    <script type="text/javascript">
-        window.MathJax = {
-            tex2jax: {
-                inlineMath: [['$', '$']],
-                processEscapes: true
-                }
-            };
-    </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 <a id="rocket" href="#top"></a>
 <script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
