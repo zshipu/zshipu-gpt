@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>微软6页论文爆火：三进制LLM，真香！ -- 知识铺 | GPT资讯  --  知识铺</title>
+    <meta property="og:title" content="微软6页论文爆火：三进制LLM，真香！ -- 知识铺 - GPT资讯  --  知识铺">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2024-03-18T10:36:08&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2024-03-18T10:36:08&#43;08:00'>
+        
+    <meta name="Keywords" content="aigc,chatgpt,langchain,golang,go语言,go语言笔记,知识铺,java,android,博客,项目管理,python,React、Next、Vue、软件架构,公众号,小程序">
+    <meta name="description" content="微软6页论文爆火：三进制LLM，真香！ -- 知识铺">
+        <meta name="author" content="知识铺">
+        
+    <meta property="og:url" content="https://gpt.zshipu.com/post/202403/LLM/%E5%BE%AE%E8%BD%AF6%E9%A1%B5%E8%AE%BA%E6%96%87%E7%88%86%E7%81%AB%E4%B8%89%E8%BF%9B%E5%88%B6LLM%E7%9C%9F%E9%A6%99-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/">
+    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    <script data-ad-client="ca-pub-2874221941555456" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WLWJSST');</script>
+    
+</head>
+
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLWJSST"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://gpt.zshipu.com/">
+                        GPT资讯  --  知识铺
+                    </a>
+                
+                <p class="description">专注于AIGC、Android、Java、Go语言(golang)、React、Next、Vue、移动互联网、项目管理、软件架构</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://gpt.zshipu.com/">首页</a>
+                    
+                    <a  href="https://gpt.zshipu.com/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://gpt.zshipu.com/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#把参数变成三进制">把参数变成三进制</a></li>
+    <li><a href="#网友能在消费级gpu跑120b大模型了">网友：能在消费级GPU跑120B大模型了</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">微软6页论文爆火：三进制LLM，真香！ -- 知识铺</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2024年3月18日
+        </date>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <p><strong>金磊 发自 凹非寺<br>
+量子位 | 公众号 QbitAI</strong></p>
+<blockquote>
+<p>现在，大语言模型（LLM）迎来了“1-bit时代”。</p>
+</blockquote>
+<p>这就是由微软和中国科学院大学在最新一项研究中所提出的结论——</p>
+<p><strong>所有的LLM，都将是1.58 bit的。</strong></p>
+<p>
+        <img class="mx-auto" alt="" src="https://p3-sign.toutiaoimg.com/tos-cn-i-axegupay5k/85478c5d90ac4db69a4745a3ba150b12~noop.image?_iz=58558&amp;from=article.pc_detail&amp;lk3s=953192f4&amp;x-expires=1711370354&amp;x-signature=e9yL8eC%2FT0Q8zNdsU89Y%2Bojd5Qw%3D" />   
+    </p>
+<p>具体而言，这项研究提出的方法叫做<strong>BitNet b1.58</strong>，可以说是从大语言模型“根儿”上的参数下手。</p>
+<p>将传统以16位浮点数（如FP16或BF16）形式的存储，统统变成了<strong>三进制</strong>，也就是 <strong>{-1, 0, 1}</strong>。</p>
+<p>
+        <img class="mx-auto" alt="" src="https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/aee93cbfa33f41c7a45977bf9bbc0fe3~noop.image?_iz=58558&amp;from=article.pc_detail&amp;lk3s=953192f4&amp;x-expires=1711370354&amp;x-signature=vFG7IFbvtWcEktMq3cwmHIkHaVg%3D" />   
+    </p>
+<p>值得注意的是，这里的“1.58 bit”并不是指每个参数占用1.58字节的存储空间，而是指每个参数可以用1.58位的信息来表示。</p>
+<p>在如此转换之后，矩阵中的计算就<strong>只会涉及到整数的加法</strong>，因此会让大模型在保持一定精度的同时，显著减少所需的存储空间和计算资源。</p>
+<p>例如BitNet b1.58在3B模型大小时与Llama做比较，速度提高了2.71倍的同时，GPU内存使用几乎仅是原先的四分之一。</p>
+<p>而且当模型的规模越大时（例如70B），速度上的提升和内存上的节省就会更加显著！</p>
+<p>这种颠覆传统的思路着实是让网友们眼前一亮，论文在X上也是受到了高度的关注：</p>
+<p>
+        <img class="mx-auto" alt="" src="https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/08b16dbd457048b2913bf73335a284bc~noop.image?_iz=58558&amp;from=article.pc_detail&amp;lk3s=953192f4&amp;x-expires=1711370354&amp;x-signature=Q02HBHIb%2BphEGvW93FsnAYL10k8%3D" />   
+    </p>
+<p>网友们惊叹“改变游戏规则”的同时，还玩起了谷歌attention论文的老梗：</p>
+<blockquote>
+<p>1 bit is all YOU need.</p>
+</blockquote>
+<p>
+        <img class="mx-auto" alt="" src="https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/216d73555eba453494eeca40964f8f2d~noop.image?_iz=58558&amp;from=article.pc_detail&amp;lk3s=953192f4&amp;x-expires=1711370354&amp;x-signature=W2nn%2BT0PhA2iWlqqiRIRXEGGrlQ%3D" />   
+    </p>
+<p>那么BitNet b1.58具体又是如何实现的？我们继续往下看。</p>
+<h2 id="把参数变成三进制">把参数变成三进制</h2>
+<p>这项研究实则是原班人马在此前发表的一篇论文基础之上做的优化，即在原始BitNet的基础上增加了一个额外的0值。</p>
+<p>
+        <img class="mx-auto" alt="" src="https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/033989d5d85340fe998d280a7d89db84~noop.image?_iz=58558&amp;from=article.pc_detail&amp;lk3s=953192f4&amp;x-expires=1711370354&amp;x-signature=x0fZxg2rI9pJcbfCCGq528KrIqo%3D" />   
+    </p>
+<p>整体来看，BitNet b1.58依旧是基于BitNet架构（一种Transformer），用BitLinear替换了nn.Linear。</p>
+<p>至于细节上的优化，首先就是我们刚才提到的“加个0”，即<strong>权重量化</strong>（weight quantization）。</p>
+<p>BitNet b1.58模型的权重被量化为三元值{-1, 0, 1}，这相当于在二进制系统中使用了1.58 bit来表示每个权重。这种量化方法减少了模型的内存占用，并简化了计算过程。</p>
+<p>
+        <img class="mx-auto" alt="" src="https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/f71e217533e94e5ca06a463309f78040~noop.image?_iz=58558&amp;from=article.pc_detail&amp;lk3s=953192f4&amp;x-expires=1711370354&amp;x-signature=VvVwlDoPkl2ZLerX8xUcP7HpuOk%3D" />   
+    </p>
+<p>其次，在<strong>量化函数设计</strong>方面，为了将权重限制在-1、0或+1之间，研究者们采用了一种称为absmean的量化函数。</p>
+<p>
+        <img class="mx-auto" alt="" src="https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/9daf357951f14f879fd3c4bac188e2de~noop.image?_iz=58558&amp;from=article.pc_detail&amp;lk3s=953192f4&amp;x-expires=1711370354&amp;x-signature=xWr42vXeC%2F4Ec%2BG8f%2FbJhd8dce0%3D" />   
+    </p>
+<p>这个函数先会根据权重矩阵的平均绝对值进行缩放，然后将每个值四舍五入到最接近的整数（-1, 0, +1）。</p>
+<p>接下来就到了<strong>激活量化</strong>（activation quantization）这一步。</p>
+<p>激活值的量化与BitNet中的实现相同，但在非线性函数之前不将激活值缩放到[0, Qb]的范围内。相反，激活值被缩放到[−Qb, Qb]的范围，以此来消除零点量化。</p>
+<p>值得一提的是，研究团队为了BitNet b1.58与开源社区兼容，采用了LLaMA模型的组件，如RMSNorm、SwiGLU等，使得它可以轻松集成到主流开源软件中。</p>
+<p>最后，在实验的性能比较上，团队将BitNet b1.58与FP16 LLaMA LLM在不同大小的模型上进行了比较。</p>
+<p>
+        <img class="mx-auto" alt="" src="https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/e366cdf971a24a6ca2ee54eb68b8959c~noop.image?_iz=58558&amp;from=article.pc_detail&amp;lk3s=953192f4&amp;x-expires=1711370354&amp;x-signature=7DxyFtIntYnlSsST%2BnjMr9VQ%2BQ8%3D" />   
+    </p>
+<p>结果显示，BitNet b1.58在3B模型大小时开始与全精度LLaMA LLM在困惑度上匹配，同时在延迟、内存使用和吞吐量方面有显著提升。</p>
+<p>而且当模型规模越大时，这种性能上提升就会越发显著。</p>
+<h2 id="网友能在消费级gpu跑120b大模型了">网友：能在消费级GPU跑120B大模型了</h2>
+<p>正如上文所言，这篇研究独特的方法在网上引发了不小的热议。</p>
+<p>DeepLearning.scala作者杨博表示：</p>
+<blockquote>
+<p>BitNet b1.58相比原版BitNet，最大的特点就是允许0参数。我觉得稍微修改一下量化函数，也许可以控制0参数的比例。当0参数的比例很大时，可以用稀疏格式存储权重，使得平均每个参数的显存占用甚至低于1比特。这就相当于权重级别的MoE了。我觉得比一般的MoE更优雅。</p>
+</blockquote>
+<p>与此同时，他也提出了关于BitNet的缺点：</p>
+<blockquote>
+<p>BitNet最大的缺点在于虽然能减少推理时的显存开销，但优化器状态和梯度仍然要用浮点数，训练仍然很费显存。我觉得如果能把BitNet和训练时节省显存的技术结合起来，那么相比传统半精度网络，同等算力和显存下支持更多参数，优势就很大了。</p>
+<p>目前能节省优化器状态的显存开销的办法是offloading。能节省梯度的显存占用的办法可能是ReLoRA。但是ReLoRA的论文实验只用了十亿参数的模型，并没有证据表明能不能推广到百亿、千亿参数的模型。</p>
+</blockquote>
+<p>
+        <img class="mx-auto" alt="" src="https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/510c7d4a650a45f7ba413255f890534d~noop.image?_iz=58558&amp;from=article.pc_detail&amp;lk3s=953192f4&amp;x-expires=1711370354&amp;x-signature=%2Bsf6xEJYJq16e3RWwDUgtas06vM%3D" />   
+    </p>
+<p>△图源：知乎，经授权引用</p>
+<p>不过也有网友分析认为：</p>
+<blockquote>
+<p>若论文成立，那么我们就能在24GB消费级GPU上跑120B的大模型了。</p>
+</blockquote>
+<p>
+        <img class="mx-auto" alt="" src="https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/3b071a40ba3143cd80c30b665701b9cf~noop.image?_iz=58558&amp;from=article.pc_detail&amp;lk3s=953192f4&amp;x-expires=1711370354&amp;x-signature=IFTaNNylmZiUM1C3YJNt2o4cnn8%3D" />   
+    </p>
+<p>
+        <img class="mx-auto" alt="" src="https://cdn.jsdelivr.net/gh/zshipu/imagesv2@main/2024/706a3b7fddec471a88883d465582ae6c~noop.image" />   
+    </p>
+<p>那么你觉得这种新方法如何呢？</p>
+<p>参考链接：<br>
+[1]https://arxiv.org/abs/2402.17764<br>
+[2]https://twitter.com/_akhaliq/status/1762729757454618720<br>
+[3]https://www.zhihu.com/question/646359036/answer/3413044355</p>
+<p>— 完 —</p>
+<p>量子位 QbitAI · 头条号签约</p>
+<p>关注我们，第一时间获知前沿科技动态</p>
+
+        </div>
+
+        <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/sblig" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/sblig', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">订阅每周最新ChatGPT技术和动向</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="邮箱订阅" /> </form>
+
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://gpt.zshipu.com/">知识铺</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://gpt.zshipu.com/post/202403/LLM/%E5%BE%AE%E8%BD%AF6%E9%A1%B5%E8%AE%BA%E6%96%87%E7%88%86%E7%81%AB%E4%B8%89%E8%BF%9B%E5%88%B6LLM%E7%9C%9F%E9%A6%99-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/">https://gpt.zshipu.com/post/202403/LLM/%E5%BE%AE%E8%BD%AF6%E9%A1%B5%E8%AE%BA%E6%96%87%E7%88%86%E7%81%AB%E4%B8%89%E8%BF%9B%E5%88%B6LLM%E7%9C%9F%E9%A6%99-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+        <li><strong>免责声明：</strong>本页面内容均来源于站内编辑发布，部分信息来源互联网，并不意味着本站赞同其观点或者证实其内容的真实性，如涉及版权等问题，请立即联系客服进行更改或删除，保证您的合法权益。转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。也可以邮件至 sblig@126.com</li>
+    </ul>
+</div>
+<br/>
+
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/202403/LLM/%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B-LLM-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/">大型语言模型 (LLM) -- 知识铺</a></li>
+        
+        <li><a href="/post/202403/LLM/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E5%BC%80%E6%BA%90LLM%E5%8F%82%E6%95%B0%E9%AB%98%E8%BE%BE3140%E4%BA%BF%E9%A9%AC%E6%96%AF%E5%85%8B%E5%A6%82%E7%BA%A6%E5%BC%80%E6%BA%90Grok10%E5%B0%8F%E6%97%B6%E7%8B%82%E6%8F%BD10000%E9%A2%97Star-36%E6%B0%AA/">史上最大开源LLM，参数高达3140亿，马斯克如约开源Grok，10小时狂揽10000颗Star-36氪 -- 知识铺</a></li>
+        
+        <li><a href="/post/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%E5%A6%82%E4%BD%95%E7%AD%B9%E9%9B%86%E6%95%B0%E7%99%BE%E4%B8%87%E7%BE%8E%E5%85%83/">人工智能初创公司如何筹集数百万美元</a></li>
+        
+        <li><a href="/post/202311/001-%E5%80%BC%E5%BE%97%E4%BD%A0%E8%8A%B1%E6%97%B6%E9%97%B4%E9%98%85%E8%AF%BB%E7%9A%84-5-%E4%B8%AA-freeCodeCamp-%E8%B5%84%E6%BA%90/">001 值得你花时间阅读的 5 个 freeCodeCamp 资源</a></li>
+        
+        <li><a href="/post/202309/005-%E6%8E%92%E5%90%8D%E5%89%8D-23%E7%9A%84-llm-/">005 排名前 23的 llm</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='/tags/LLM'>LLM</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "zshipu/gpt"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2024 <a href="https://gpt.zshipu.com/">GPT资讯  --  知识铺 By 知识铺</a>
+        
+        | <a rel="nofollow" target="_blank" href="https://beian.miit.gov.cn/">浙 ICP 备19032823号-1</a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://gpt.zshipu.com/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://gpt.zshipu.com/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://gpt.zshipu.com/post/202403/prompt/%E4%B8%BA%E6%82%A8%E7%9A%84-AI-%E9%A1%B9%E7%9B%AE%E9%9B%87%E7%94%A8-GPT-Prompt-%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E6%8C%87%E5%8D%97---A-Guide-on-Hiring-GPT-Prompt-Engineers-for-Your-AI-Project/" title="为您的 AI 项目雇用 GPT Prompt 工程师的指南 --- A Guide on Hiring GPT Prompt Engineers for Your AI Project -- 知识铺">为您的 AI 项目雇用 GPT Prompt 工程师的指南 --- A Guide on Hiring GPT Prompt Engineers for Your AI Project -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="https://gpt.zshipu.com/post/202403/prompt/2024-%E5%B9%B4-9-%E4%B8%AA%E6%9C%80%E4%BD%B3%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA%E7%94%9F%E6%88%90%E5%99%A8ChatGPTMidjourney-%E7%AD%89-The-Tech-Edvocate---9-Best-AI-Prompt-Generators-2024-ChatGPT-Midjourney-More-The-Tech-Edvocate/" title="2024 年 9 个最佳人工智能提示生成器（ChatGPT、Midjourney 等） - The Tech Edvocate --- 9 Best AI Prompt Generators 2024 (ChatGPT, Midjourney &amp; More) - The Tech Edvocate -- 知识铺">2024 年 9 个最佳人工智能提示生成器（ChatGPT、Midjourney 等） - The Tech Edvocate --- 9 Best AI Prompt Generators 2024 (ChatGPT, Midjourney &amp; More) - The Tech Edvocate -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="https://gpt.zshipu.com/post/202403/prompt/%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82-Prompt-%E7%BC%96%E7%A8%8Bv2/" title="一文搞懂 Prompt 编程v2 -- 知识铺">一文搞懂 Prompt 编程v2 -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="https://gpt.zshipu.com/post/202403/prompt/%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82-Prompt-%E7%BC%96%E7%A8%8B/" title="一文搞懂 Prompt 编程 -- 知识铺">一文搞懂 Prompt 编程 -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="https://gpt.zshipu.com/post/202403/prompt/%E4%BB%80%E4%B9%88%E6%98%AFPrompt%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5-luch%E7%9A%84%E5%8D%9A%E5%AE%A2/" title="什么是Prompt？——深度学习中的重要概念 - luch的博客 -- 知识铺">什么是Prompt？——深度学习中的重要概念 - luch的博客 -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="https://gpt.zshipu.com/post/202403/prompt/Effective-Prompt-%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FPrompt%E7%9A%8414%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95-%E7%9F%A5%E4%B9%8E/" title="Effective Prompt 编写高质量Prompt的14个有效方法 - 知乎 -- 知识铺">Effective Prompt 编写高质量Prompt的14个有效方法 - 知乎 -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="https://gpt.zshipu.com/post/202403/prompt/6%E4%B8%AAAI%E9%AB%98%E6%89%8B%E9%83%BD%E5%9C%A8%E7%94%A8%E7%9A%84%E6%8F%90%E7%A4%BA%E8%AF%8Dprompt%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%AE%E6%94%B6%E8%97%8F-%E7%9F%A5%E4%B9%8E/" title="6个AI高手都在用的提示词prompt网站，建议收藏！ - 知乎 -- 知识铺">6个AI高手都在用的提示词prompt网站，建议收藏！ - 知乎 -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="https://gpt.zshipu.com/post/202403/prompt/Prompt%E8%90%A5%E9%94%80%E7%9A%84%E9%9B%B7%E7%A5%9E%E4%B9%8B%E9%94%A4_%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB/" title="Prompt：营销的雷神之锤_腾讯新闻 -- 知识铺">Prompt：营销的雷神之锤_腾讯新闻 -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="https://gpt.zshipu.com/post/202403/prompt/OpenAI%E7%9A%84%E5%AE%98%E6%96%B9Prompt%E5%B7%A5%E7%A8%8B%E6%8C%87%E5%8D%97%E8%AF%A6%E8%A7%A3-%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E7%9C%9F%E7%9A%84%E5%B0%B1%E5%A4%9F%E4%BA%86_%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB/" title="OpenAI的官方Prompt工程指南详解 - 看这一篇真的就够了_腾讯新闻 -- 知识铺">OpenAI的官方Prompt工程指南详解 - 看这一篇真的就够了_腾讯新闻 -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="https://gpt.zshipu.com/post/202403/prompt/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E8%AE%A9%E4%BD%A0%E6%88%90%E4%B8%BAprompt%E4%B8%93%E5%AE%B6-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/" title="一篇文章让你成为prompt专家 -- 知识铺">一篇文章让你成为prompt专家 -- 知识铺</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">福利派送</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?source=5176.11533457&amp;userCode=tzm8r4hc" title="【2019双12】ALL IN CLoud 低至1折" target="_blank" style="color:red">
+                
+                    <img src="https://img.alicdn.com/tfs/TB1_rYHo7P2gK0jSZPxXXacQpXa-690-388.jpg">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?source=5176.11533457&amp;userCode=tzm8r4hc" title="助力产业智慧升级，云服务器首年88元起，更有千元代金券礼包免费领！" target="_blank" style="color:red">
+                
+                    <img src="https://upload-dianshi-1255598498.file.myqcloud.com/345-7c71532bd4935fbdd9a67c1a71e577b1767b805c.200%E7%89%88%E6%9C%ACB.jpg">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?source=5176.11533457&amp;userCode=tzm8r4hc" title="【渠道专享低折扣】11月特惠 限时2折" target="_blank" style="color:red">
+                
+                    <img src="https://img.alicdn.com/tfs/TB1hblJl7Y2gK0jSZFgXXc5OFXa-750-400.jpg">
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
+<ul class="widget-list">
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/tags/'>标签</a></h3>
+<div class="tagcloud">
+    
+    <a href="https://gpt.zshipu.com/tags/AI/">AI</a>
+    
+    <a href="https://gpt.zshipu.com/tags/GPT/">GPT</a>
+    
+    <a href="https://gpt.zshipu.com/tags/LLM/">LLM</a>
+    
+    <a href="https://gpt.zshipu.com/tags/Midjourney/">Midjourney</a>
+    
+    <a href="https://gpt.zshipu.com/tags/prompt/">prompt</a>
+    
+    <a href="https://gpt.zshipu.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://geek.zshipu.com//" title="知识铺的博客">知识铺的博客</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://gpt.zshipu.com/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script
+  src="https://js.sentry-cdn.com/5c69c7b20860be9ded39ad4778ddc21e.min.js"
+  crossorigin="anonymous"
+></script>
+
+</html>
