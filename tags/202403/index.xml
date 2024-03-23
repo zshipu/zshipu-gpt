@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>202403 on GPT资讯  --  知识铺</title>
+    <link>http://localhost:1313/tags/202403/</link>
+    <description>Recent content in 202403 on GPT资讯  --  知识铺</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 22 Mar 2024 19:49:57 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/202403/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Le Chat Mistral -- 知识铺</title>
+      <link>http://localhost:1313/post/202403/prompt/Le-Chat-Mistral/</link>
+      <pubDate>Fri, 22 Mar 2024 19:49:57 +0000</pubDate>
+      <guid>http://localhost:1313/post/202403/prompt/Le-Chat-Mistral/</guid>
+      <description>掌握提示工程：创造完美AI模型提示的艺术 引言： 人工智能（AI）模型在各种应用中的普及，使得提示工程（Prompt Engineering）成为一个非常重要的技能。提示工程是指设计和优化输入提示，以获得最佳的AI模型响应。在本文中，我们将探讨提示工程的基础知识、最佳实践和技巧，以帮助</description>
+    </item>
+  </channel>
+</rss>

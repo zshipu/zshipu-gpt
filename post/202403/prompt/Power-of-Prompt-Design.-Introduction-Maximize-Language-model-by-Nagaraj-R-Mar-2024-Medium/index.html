@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>提示设计的力量 -- 知识铺 | GPT资讯  --  知识铺</title>
+    <meta property="og:title" content="提示设计的力量 -- 知识铺 - GPT资讯  --  知识铺">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2024-03-22T20:00:57&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2024-03-22T20:00:57&#43;08:00'>
+        
+    <meta name="Keywords" content="aigc,chatgpt,langchain,golang,go语言,go语言笔记,知识铺,java,android,博客,项目管理,python,React、Next、Vue、软件架构,公众号,小程序">
+    <meta name="description" content="提示设计的力量 -- 知识铺">
+        <meta name="author" content="知识铺">
+        
+    <meta property="og:url" content="http://localhost:1313/post/202403/prompt/Power-of-Prompt-Design.-Introduction-Maximize-Language-model-by-Nagaraj-R-Mar-2024-Medium/">
+    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    <script data-ad-client="ca-pub-2874221941555456" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WLWJSST');</script>
+    
+</head>
+
+
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLWJSST"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://localhost:1313/">
+                        GPT资讯  --  知识铺
+                    </a>
+                
+                <p class="description">专注于AIGC、Android、Java、Go语言(golang)、React、Next、Vue、移动互联网、项目管理、软件架构</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://localhost:1313/">首页</a>
+                    
+                    <a  href="http://localhost:1313/archives/" title="归档">归档</a>
+                    
+                    <a  href="http://localhost:1313/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#提示设计的力量"> 提示设计的力量</a></li>
+    <li><a href="#介绍"> 介绍：</a></li>
+    <li><a href="#什么是大型语言模型"><strong>什么是大型语言模型？</strong></a></li>
+    <li><a href="#什么是提示工程"><strong>什么是提示工程？</strong></a></li>
+    <li><a href="#设计提示框架"> <strong>设计提示框架：</strong></a></li>
+    <li><a href="#总之rtfctf-和-rascef-提示框架之间的选择取决于任务的复杂性所需的详细程度以及提示的类型零样本单样本或少样本每个框架都具有独特的优势并且最适合不同的提示类型允许提示设计的灵活性和适应性以有效地满足特定的任务要求">总之，RTF、CTF 和 RASCEF 提示框架之间的选择取决于任务的复杂性、所需的详细程度以及提示的类型（零样本、单样本或少样本）。每个框架都具有独特的优势，并且最适合不同的提示类型，允许提示设计的灵活性和适应性，以有效地满足特定的任务要求。</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">提示设计的力量 -- 知识铺</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2024年3月22日
+        </date>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <h2 id="提示设计的力量"> 提示设计的力量</h2>
+<h2 id="介绍"> 介绍：</h2>
+<p>我花了很多时间研究和使用大型语言模型（LLMs），它们就像理解人类语言的超级智能程序。我做了很多研究，并在实际项目中尝试了不同的想法。</p>
+<p>在这篇博客中，我想谈谈我学到的一些重要的东西：如何给这些LLMs正确的指示，以便他们可以做有用的事情。这就是所谓的提示设计，它很重要。</p>
+<p>我将分享我从自己的经历中学到的东西，并向您展示它如何在我们与LLMs交谈时对我们的理解和回应方面产生重大影响。让我们一起潜入并探索吧！</p>
+<h2 id="什么是大型语言模型"><strong>什么是大型语言模型？</strong></h2>
+<p>大型语言模型（LLM）是一种先进的软件系统，旨在像人类一样理解和生成语言。通过对来自互联网等各种来源的大型数据集进行广泛的训练，LLMs学习语言的结构和模式。</p>
+<p>这使他们能够生成与人类语音非常相似的连贯文本。 LLMs 广泛应用于自然语言处理、翻译和内容创建等领域，改变了我们与语言相关技术交互的方式。</p>
+<h2 id="什么是提示工程"><strong>什么是提示工程？</strong></h2>
+<p>提示工程是为大型语言模型 (LLMs) 创建指令以指导它们生成文本或响应的过程。</p>
+<p>它涉及设计清晰有效的提示，提示 LLM 产生与特定任务或情况相关的所需输出。</p>
+<p>提示工程的目标是通过精心设计提示来提高 LLMs 的性能，从而产生准确且适合上下文的响应。此过程会考虑预期任务、受众和主题等因素。</p>
+<p>总体而言，即时工程对于优化 LLMs 的功能并在各种应用程序（包括自然语言理解、翻译和内容创建）中实现预期结果至关重要。</p>
+<p> 提示类型：</p>
+<p>语言模型提示是结构化输入，用于指导从 LLM 模型生成所需的输出。这些提示的复杂性和特异性各不相同，可满足不同的任务要求和输入数据可用性。以下是主要类型：</p>
+<blockquote>
+<p> <strong>零射击：</strong></p>
+</blockquote>
+<p>在零射击提示中，大型语言模型 (LLM) 的任务是在不提供任何具体示例或训练数据的情况下生成响应。该模型预计将利用其预先存在的知识来生成适当的响应。</p>
+<p> 例子：</p>
+<p>提示：“根据患者提供的症状诊断病情。”</p>
+<p>输出：患者的症状表明可能诊断为肺炎。可能需要进一步的检查，例如胸部 X 光检查和血液检查来确认诊断。</p>
+<p>说明：在此场景中，LLM 会在没有任何特定示例或训练数据的情况下生成诊断。它仅依靠现有的医疗状况和症状知识来做出诊断。</p>
+<blockquote>
+<p> <strong>一枪：</strong></p>
+</blockquote>
+<p>一次性提示涉及向 LLM 提供所需任务的单个示例或实例。该模型预计将根据该单一输入生成响应。</p>
+<p> 例子：</p>
+<p>提示：根据患者的病史和当前症状，诊断病情。</p>
+<p>输入：患者有哮喘病史，并表现为气短、喘息和咳嗽。</p>
+<p>输出：根据患者的哮喘病史以及当前的呼吸短促、喘息和咳嗽症状，可能的诊断是哮喘恶化。</p>
+<p>说明：仅提供一个示例，LLM 使用输入数据来诊断患者的病情。它利用给定的信息做出明智的诊断。</p>
+<blockquote>
+<p> <strong>几枪：</strong></p>
+</blockquote>
+<p>很少有镜头提示为 LLM 提供所需任务的一些示例或实例。该模型从这些有限的示例中学习以生成响应，从而使其能够根据提供的实例进行调整和概括。</p>
+<p> 例子：</p>
+<p>提示：“根据患者情况，根据提供的症状和病史预测诊断。”</p>
+<p> <strong><em>输入：</em></strong></p>
+<p>1. 患者出现发烧、喉咙痛、淋巴结肿大等症状。病史包括最近去过热带地区。”</p>
+<p>2.患者主诉腹痛、恶心、呕吐。病史表明以前诊断过阑尾炎。”</p>
+<p>输出：根据第一位患者的症状和最近去过热带地区，可能的诊断是急性病毒性咽炎。对于第二名患者，症状和病史表明阑尾炎可能复发。</p>
+<p>说明：通过提供的一些示例，LLM分析每个患者的症状和病史以做出诊断。它从这些实例中学习，以概括和预测类似案例的可能诊断。</p>
+<blockquote>
+<p>总之，每种类型的提示（零样本、一次样本和少量样本）都可以应用于不同级别的输入数据，范围从没有示例到单个示例或几个示例。</p>
+<p>LLM 相应地调整其诊断，利用其预先存在的知识并从提供的示例中学习来生成准确的评估。</p>
+</blockquote>
+<h2 id="设计提示框架"> <strong>设计提示框架：</strong></h2>
+<p>提示框架是一种结构化方法，用于设计提示以指导语言模型生成所需的输出。</p>
+<p>这些框架提供了一种系统的方法来定义模型产生相关响应所需的输入格式、任务要求和上下文信息。</p>
+<p>以下是一些常见的提示框架：</p>
+<blockquote>
+<p>RTF（角色、任务、格式）提示框架是一种用于设计大型语言模型 (LLMs) 提示的结构化方法。</p>
+</blockquote>
+<p>它由三个部分组成：</p>
+<p>角色：角色组件定义 LLM 在生成响应时应采用的视角或角色。这有助于将提示置于上下文中并指定应生成响应的所需观点。</p>
+<p>任务：任务组件概述了LLM预期要完成的具体目标或任务。它描述了提示的目标或目的，指导 LLM 生成相关且信息丰富的响应。</p>
+<p>格式：格式组件指定响应应遵循的结构或格式。它定义了有关生成文本的组织、样式或布局的任何特定要求，确保输出的一致性和清晰度。</p>
+<pre tabindex="0"><code>&lt;span id=&#34;3d3b&#34; data-selectable-paragraph=&#34;&#34;&gt;&lt;span&gt;Example:&lt;/span&gt; &lt;span&gt;Diagnosing&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;Patient&#39;s&lt;/span&gt; &lt;span&gt;Condition&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;span&gt;Role:&lt;/span&gt; &lt;span&gt;Assume&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;role&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;physician&lt;/span&gt; &lt;span&gt;in&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;primary&lt;/span&gt; &lt;span&gt;care&lt;/span&gt; &lt;span&gt;clinic.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;span&gt;Task:&lt;/span&gt; &lt;span&gt;Review&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;patient&#39;s&lt;/span&gt; &lt;span&gt;symptoms&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;medical&lt;/span&gt; &lt;span&gt;history.&lt;/span&gt;&lt;br&gt;    &lt;span&gt;Symptoms:&lt;/span&gt; &lt;span&gt;Fever,&lt;/span&gt; &lt;span&gt;cough,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;chest&lt;/span&gt; &lt;span&gt;pain.&lt;/span&gt;&lt;br&gt;    &lt;span&gt;Medical History:&lt;/span&gt; &lt;span&gt;History&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; &lt;span&gt;smoking.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;span&gt;Format:&lt;/span&gt;&lt;br&gt;    &lt;span&gt;Diagnosis:&lt;/span&gt; &lt;span&gt;Based&lt;/span&gt; &lt;span&gt;on&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;symptoms&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;medical&lt;/span&gt; &lt;span&gt;history,&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;patient&lt;/span&gt; &lt;span&gt;is&lt;/span&gt; &lt;span&gt;likely&lt;/span&gt; &lt;span&gt;suffering&lt;/span&gt; &lt;span&gt;from&lt;/span&gt; &lt;span&gt;pneumonia.&lt;/span&gt;&lt;br&gt;    &lt;span&gt;Treatment Recommendations:&lt;/span&gt; &lt;span&gt;Prescribe&lt;/span&gt; &lt;span&gt;antibiotics&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;treat&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;infection&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;advise&lt;/span&gt; &lt;span&gt;rest&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;hydration.&lt;/span&gt;&lt;br&gt;    &lt;span&gt;Further Tests:&lt;/span&gt; &lt;span&gt;Order&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;chest&lt;/span&gt; &lt;span&gt;X-ray&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;confirm&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;diagnosis&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;assess&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;severity&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;infection.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;br&gt;  &lt;span&gt;Output:&lt;/span&gt; &lt;span&gt;As&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;physician,&lt;/span&gt; &lt;span&gt;after&lt;/span&gt; &lt;span&gt;reviewing&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;patient&#39;s&lt;/span&gt; &lt;span&gt;symptoms&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; &lt;span&gt;fever,&lt;/span&gt; &lt;span&gt;cough,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;chest&lt;/span&gt; &lt;span&gt;pain,&lt;/span&gt; &lt;span&gt;along&lt;/span&gt; &lt;span&gt;with&lt;/span&gt; &lt;span&gt;their&lt;/span&gt; &lt;span&gt;history&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; &lt;span&gt;smoking,&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;likely&lt;/span&gt; &lt;span&gt;diagnosis&lt;/span&gt; &lt;span&gt;is&lt;/span&gt; &lt;span&gt;pneumonia.&lt;/span&gt; &lt;span&gt;recommend&lt;/span&gt; &lt;span&gt;prescribing&lt;/span&gt; &lt;span&gt;antibiotics&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;treat&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;infection&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;advising&lt;/span&gt; &lt;span&gt;rest&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;hydration.&lt;/span&gt; &lt;span&gt;Additionally,&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;chest&lt;/span&gt; &lt;span&gt;X-ray&lt;/span&gt; &lt;span&gt;should&lt;/span&gt; &lt;span&gt;be&lt;/span&gt; &lt;span&gt;ordered&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;confirm&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;diagnosis&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;assess&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;severity&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;infection.&lt;/span&gt;&lt;/span&gt;
+</code></pre><p>在此示例中，RTF 提示框架通过定义所需响应的角色、任务和格式来帮助构建提示，使大语言模型能够针对患者的病情生成全面的诊断和治疗计划。</p>
+<blockquote>
+<p>CTF（上下文、任务、格式）提示框架是另一种用于设计大型语言模型提示的结构化方法 (LLMs)</p>
+</blockquote>
+<p>它由三个关键组件组成：</p>
+<p>上下文：上下文组件提供与当前任务相关的背景信息或上下文。它通过提供 LLM 在生成响应时应考虑的任何必要的上下文或详细信息来为提示做好准备。</p>
+<p>任务：任务组件概述了LLM预期要完成的具体目标或任务。它描述了提示的目标或目的，指导 LLM 根据提供的上下文生成相关且信息丰富的响应。</p>
+<p>格式：格式组件指定响应应遵循的结构或格式。它定义了有关生成文本的组织、样式或布局的任何特定要求，确保输出的一致性和清晰度。</p>
+<pre tabindex="0"><code>&lt;span id=&#34;37bc&#34; data-selectable-paragraph=&#34;&#34;&gt;&lt;span&gt;Example:&lt;/span&gt; &lt;span&gt;Recommending&lt;/span&gt; &lt;span&gt;Treatment&lt;/span&gt; &lt;span&gt;for&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;Patient&lt;/span&gt; &lt;span&gt;with&lt;/span&gt; &lt;span&gt;Hypertension&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;span&gt;Context:&lt;/span&gt;&lt;br&gt;    &lt;span&gt;The&lt;/span&gt; &lt;span&gt;patient,&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;55&lt;/span&gt;&lt;span&gt;-year-old&lt;/span&gt; &lt;span&gt;male,&lt;/span&gt; &lt;span&gt;has&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;history&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; &lt;span&gt;hypertension&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;is&lt;/span&gt; &lt;span&gt;at&lt;/span&gt; &lt;span&gt;risk&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; &lt;span&gt;developing&lt;/span&gt; &lt;span&gt;complications&lt;/span&gt; &lt;span&gt;such&lt;/span&gt; &lt;span&gt;as&lt;/span&gt; &lt;span&gt;heart&lt;/span&gt; &lt;span&gt;disease&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;stroke.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;span&gt;Task:&lt;/span&gt;&lt;br&gt;    &lt;span&gt;Identify the Objective:&lt;/span&gt; &lt;span&gt;The&lt;/span&gt; &lt;span&gt;objective&lt;/span&gt; &lt;span&gt;is&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;recommend&lt;/span&gt; &lt;span&gt;treatment&lt;/span&gt; &lt;span&gt;options&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;lifestyle&lt;/span&gt; &lt;span&gt;modifications&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;effectively&lt;/span&gt; &lt;span&gt;manage&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;patient&#39;s&lt;/span&gt; &lt;span&gt;hypertension&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;reduce&lt;/span&gt; &lt;span&gt;associated&lt;/span&gt; &lt;span&gt;risks.&lt;/span&gt;&lt;br&gt;    &lt;span&gt;Task Details:&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;     &lt;span&gt;Assess&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;patient&#39;s&lt;/span&gt; &lt;span&gt;current&lt;/span&gt; &lt;span&gt;blood&lt;/span&gt; &lt;span&gt;pressure&lt;/span&gt; &lt;span&gt;levels&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;response&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;any&lt;/span&gt; &lt;span&gt;previous&lt;/span&gt; &lt;span&gt;medications.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;     &lt;span&gt;Consider&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;patient&#39;s&lt;/span&gt; &lt;span&gt;medical&lt;/span&gt; &lt;span&gt;history,&lt;/span&gt; &lt;span&gt;including&lt;/span&gt; &lt;span&gt;any&lt;/span&gt; &lt;span&gt;comorbid&lt;/span&gt; &lt;span&gt;conditions&lt;/span&gt; &lt;span&gt;or&lt;/span&gt; &lt;span&gt;contraindications.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;     &lt;span&gt;Provide&lt;/span&gt; &lt;span&gt;recommendations&lt;/span&gt; &lt;span&gt;for&lt;/span&gt; &lt;span&gt;medication&lt;/span&gt; &lt;span&gt;adjustments&lt;/span&gt; &lt;span&gt;or&lt;/span&gt; &lt;span&gt;additions,&lt;/span&gt; &lt;span&gt;if&lt;/span&gt; &lt;span&gt;necessary.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;     &lt;span&gt;Advise&lt;/span&gt; &lt;span&gt;on&lt;/span&gt; &lt;span&gt;lifestyle&lt;/span&gt; &lt;span&gt;modifications&lt;/span&gt; &lt;span&gt;such&lt;/span&gt; &lt;span&gt;as&lt;/span&gt; &lt;span&gt;diet,&lt;/span&gt; &lt;span&gt;exercise,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;stress&lt;/span&gt; &lt;span&gt;management&lt;/span&gt; &lt;span&gt;techniques.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;     &lt;span&gt;Specify&lt;/span&gt; &lt;span&gt;any&lt;/span&gt; &lt;span&gt;follow-up&lt;/span&gt; &lt;span&gt;appointments&lt;/span&gt; &lt;span&gt;or&lt;/span&gt; &lt;span&gt;monitoring&lt;/span&gt; &lt;span&gt;requirements.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;span&gt;Format:&lt;/span&gt;&lt;br&gt;    &lt;span&gt;Define the Desired Output:&lt;/span&gt;&lt;br&gt;      &lt;span&gt;Medication Recommendations:&lt;/span&gt; &lt;span&gt;Recommend&lt;/span&gt; &lt;span&gt;appropriate&lt;/span&gt; &lt;span&gt;antihypertensive&lt;/span&gt; &lt;span&gt;medications&lt;/span&gt; &lt;span&gt;based&lt;/span&gt; &lt;span&gt;on&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;patient&#39;s&lt;/span&gt; &lt;span&gt;current&lt;/span&gt; &lt;span&gt;blood&lt;/span&gt; &lt;span&gt;pressure&lt;/span&gt; &lt;span&gt;levels&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;medical&lt;/span&gt; &lt;span&gt;history.&lt;/span&gt; &lt;span&gt;Consider&lt;/span&gt; &lt;span&gt;factors&lt;/span&gt; &lt;span&gt;such&lt;/span&gt; &lt;span&gt;as&lt;/span&gt; &lt;span&gt;efficacy,&lt;/span&gt; &lt;span&gt;side&lt;/span&gt; &lt;span&gt;effects,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;drug&lt;/span&gt; &lt;span&gt;interactions.&lt;/span&gt;&lt;br&gt;      &lt;span&gt;Lifestyle Modifications:&lt;/span&gt; &lt;span&gt;Advise&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;patient&lt;/span&gt; &lt;span&gt;on&lt;/span&gt; &lt;span&gt;adopting&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;low-sodium&lt;/span&gt; &lt;span&gt;diet,&lt;/span&gt; &lt;span&gt;engaging&lt;/span&gt; &lt;span&gt;in&lt;/span&gt; &lt;span&gt;regular&lt;/span&gt; &lt;span&gt;physical&lt;/span&gt; &lt;span&gt;activity,&lt;/span&gt; &lt;span&gt;maintaining&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;healthy&lt;/span&gt; &lt;span&gt;weight,&lt;/span&gt; &lt;span&gt;limiting&lt;/span&gt; &lt;span&gt;alcohol&lt;/span&gt; &lt;span&gt;intake,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;avoiding&lt;/span&gt; &lt;span&gt;tobacco&lt;/span&gt; &lt;span&gt;use.&lt;/span&gt;&lt;br&gt;      &lt;span&gt;Follow-up Instructions:&lt;/span&gt; &lt;span&gt;Schedule&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;follow-up&lt;/span&gt; &lt;span&gt;appointment&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;monitor&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;patient&#39;s&lt;/span&gt; &lt;span&gt;blood&lt;/span&gt; &lt;span&gt;pressure&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;adjust&lt;/span&gt; &lt;span&gt;treatment&lt;/span&gt; &lt;span&gt;as&lt;/span&gt; &lt;span&gt;needed.&lt;/span&gt; &lt;span&gt;Emphasize&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;importance&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; &lt;span&gt;adherence&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;medication&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;lifestyle&lt;/span&gt; &lt;span&gt;recommendations.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;br&gt;&lt;span&gt;Output:&lt;/span&gt; &lt;span&gt;Considering&lt;/span&gt; &lt;span&gt;your&lt;/span&gt; &lt;span&gt;medical&lt;/span&gt; &lt;span&gt;history&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;current&lt;/span&gt; &lt;span&gt;blood&lt;/span&gt; &lt;span&gt;pressure&lt;/span&gt; &lt;span&gt;levels,&lt;/span&gt; &lt;span&gt;recommend&lt;/span&gt; &lt;span&gt;continuing&lt;/span&gt; &lt;span&gt;with&lt;/span&gt; &lt;span&gt;your&lt;/span&gt; &lt;span&gt;current&lt;/span&gt; &lt;span&gt;antihypertensive&lt;/span&gt; &lt;span&gt;medication&lt;/span&gt; &lt;span&gt;regimen&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; [&lt;span&gt;medication&lt;/span&gt; &lt;span&gt;names&lt;/span&gt;] &lt;span&gt;to&lt;/span&gt; &lt;span&gt;effectively&lt;/span&gt; &lt;span&gt;manage&lt;/span&gt; &lt;span&gt;your&lt;/span&gt; &lt;span&gt;hypertension.&lt;/span&gt; &lt;span&gt;Additionally,&lt;/span&gt; &lt;span&gt;adopting&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;low-sodium&lt;/span&gt; &lt;span&gt;diet,&lt;/span&gt; &lt;span&gt;engaging&lt;/span&gt; &lt;span&gt;in&lt;/span&gt; &lt;span&gt;regular&lt;/span&gt; &lt;span&gt;exercise,&lt;/span&gt; &lt;span&gt;maintaining&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;healthy&lt;/span&gt; &lt;span&gt;weight,&lt;/span&gt; &lt;span&gt;limiting&lt;/span&gt; &lt;span&gt;alcohol&lt;/span&gt; &lt;span&gt;intake,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;avoiding&lt;/span&gt; &lt;span&gt;tobacco&lt;/span&gt; &lt;span&gt;use&lt;/span&gt; &lt;span&gt;can&lt;/span&gt; &lt;span&gt;help&lt;/span&gt; &lt;span&gt;control&lt;/span&gt; &lt;span&gt;your&lt;/span&gt; &lt;span&gt;blood&lt;/span&gt; &lt;span&gt;pressure.&lt;/span&gt; &lt;span&gt;Please&lt;/span&gt; &lt;span&gt;schedule&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;follow-up&lt;/span&gt; &lt;span&gt;appointment&lt;/span&gt; &lt;span&gt;in&lt;/span&gt; &lt;span&gt;three&lt;/span&gt; &lt;span&gt;months&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;monitor&lt;/span&gt; &lt;span&gt;your&lt;/span&gt; &lt;span&gt;blood&lt;/span&gt; &lt;span&gt;pressure&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;assess&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;effectiveness&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;treatment&lt;/span&gt; &lt;span&gt;plan.&lt;/span&gt;&lt;/span&gt;
+</code></pre><p>在此示例中，CTF 提示框架通过提供相关上下文、概述要执行的任务以及定义所需响应的格式来帮助构建提示。</p>
+<p>这种结构化方法确保生成的响应是全面的、相关的，并且与有效管理患者高血压的目标保持一致。</p>
+<blockquote>
+<p>RASCEF（角色、操作、步骤、上下文、示例、格式）提示框架是一种用于设计大型语言模型 (LLMs) 提示的结构化方法。</p>
+</blockquote>
+<p>它由六个关键部分组成：</p>
+<p>角色：角色组件定义 LLM 在生成响应时应采用的视角或角色。它指定了响应所针对的实体或个人，或者应该生成响应的观点。</p>
+<p>操作：操作组件概述了 LLM 预期执行的特定操作或任务。它描述了 LLM 应该如何响应提示，指导其行为或功能。</p>
+<p>步骤：步骤组件将任务或操作分解为更小的、连续的步骤或阶段。它提供了一种完成任务的结构化方法，有助于组织响应生成过程。</p>
+<p>上下文：上下文组件提供与当前任务相关的背景信息或上下文。它通过提供 LLM 在生成响应时应考虑的任何必要的上下文或详细信息来为提示做好准备。</p>
+<p>示例：示例组件通过提供特定示例或场景来说明操作中的提示框架。它演示了角色、操作、步骤和上下文组件如何协同工作以指导响应的生成。</p>
+<p>格式：格式组件指定响应应遵循的结构或格式。它定义了有关生成文本的组织、样式或布局的任何特定要求，确保输出的一致性和清晰度。</p>
+<pre tabindex="0"><code>&lt;span id=&#34;cb6e&#34; data-selectable-paragraph=&#34;&#34;&gt;&lt;span&gt;Example:&lt;/span&gt; &lt;span&gt;Creating&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;Patient&lt;/span&gt; &lt;span&gt;Education&lt;/span&gt; &lt;span&gt;Guide&lt;/span&gt; &lt;span&gt;on&lt;/span&gt; &lt;span&gt;Diabetes&lt;/span&gt; &lt;span&gt;Management&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;span&gt;Role:&lt;/span&gt; &lt;br&gt;    &lt;span&gt;Define the Role:&lt;/span&gt; &lt;span&gt;Assume&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;role&lt;/span&gt; &lt;span&gt;of&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;healthcare&lt;/span&gt; &lt;span&gt;educator&lt;/span&gt; &lt;span&gt;or&lt;/span&gt; &lt;span&gt;nurse&lt;/span&gt; &lt;span&gt;responsible&lt;/span&gt; &lt;span&gt;for&lt;/span&gt; &lt;span&gt;creating&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;patient&lt;/span&gt; &lt;span&gt;education&lt;/span&gt; &lt;span&gt;guide&lt;/span&gt; &lt;span&gt;on&lt;/span&gt; &lt;span&gt;diabetes&lt;/span&gt; &lt;span&gt;management.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;span&gt;Action:&lt;/span&gt; &lt;br&gt;    &lt;span&gt;Outline the Action:&lt;/span&gt; &lt;span&gt;The&lt;/span&gt; &lt;span&gt;action&lt;/span&gt; &lt;span&gt;is&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;compile&lt;/span&gt; &lt;span&gt;comprehensive&lt;/span&gt; &lt;span&gt;information&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;guidelines&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;help&lt;/span&gt; &lt;span&gt;patients&lt;/span&gt; &lt;span&gt;effectively&lt;/span&gt; &lt;span&gt;manage&lt;/span&gt; &lt;span&gt;their&lt;/span&gt; &lt;span&gt;diabetes.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;span&gt;Steps:&lt;/span&gt;&lt;br&gt;    &lt;span&gt;Break Down the Task into Steps:&lt;/span&gt;&lt;br&gt;      &lt;span&gt;a. Research:&lt;/span&gt; &lt;span&gt;Gather&lt;/span&gt; &lt;span&gt;information&lt;/span&gt; &lt;span&gt;on&lt;/span&gt; &lt;span&gt;diabetes,&lt;/span&gt; &lt;span&gt;including&lt;/span&gt; &lt;span&gt;causes,&lt;/span&gt; &lt;span&gt;symptoms,&lt;/span&gt; &lt;span&gt;complications,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;treatment&lt;/span&gt; &lt;span&gt;options.&lt;/span&gt;&lt;br&gt;      &lt;span&gt;b. Organize:&lt;/span&gt; &lt;span&gt;Structure&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;guide&lt;/span&gt; &lt;span&gt;into&lt;/span&gt; &lt;span&gt;sections&lt;/span&gt; &lt;span&gt;covering&lt;/span&gt; &lt;span&gt;topics&lt;/span&gt; &lt;span&gt;such&lt;/span&gt; &lt;span&gt;as&lt;/span&gt; &lt;span&gt;diet,&lt;/span&gt; &lt;span&gt;exercise,&lt;/span&gt; &lt;span&gt;medication&lt;/span&gt; &lt;span&gt;management,&lt;/span&gt; &lt;span&gt;blood&lt;/span&gt; &lt;span&gt;sugar&lt;/span&gt; &lt;span&gt;monitoring,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;complication&lt;/span&gt; &lt;span&gt;prevention.&lt;/span&gt;&lt;br&gt;      &lt;span&gt;c. Write:&lt;/span&gt; &lt;span&gt;Draft&lt;/span&gt; &lt;span&gt;clear&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;concise&lt;/span&gt; &lt;span&gt;explanations,&lt;/span&gt; &lt;span&gt;tips,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;instructions&lt;/span&gt; &lt;span&gt;for&lt;/span&gt; &lt;span&gt;each&lt;/span&gt; &lt;span&gt;section.&lt;/span&gt;&lt;br&gt;      &lt;span&gt;d. Review:&lt;/span&gt; &lt;span&gt;Ensure&lt;/span&gt; &lt;span&gt;accuracy&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;clarity&lt;/span&gt; &lt;span&gt;by&lt;/span&gt; &lt;span&gt;reviewing&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;content&lt;/span&gt; &lt;span&gt;for&lt;/span&gt; &lt;span&gt;medical&lt;/span&gt; &lt;span&gt;accuracy&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;readability.&lt;/span&gt;&lt;br&gt;      &lt;span&gt;e. Design:&lt;/span&gt; &lt;span&gt;Format&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;guide&lt;/span&gt; &lt;span&gt;in&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;visually&lt;/span&gt; &lt;span&gt;appealing&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;easy-to-understand&lt;/span&gt; &lt;span&gt;layout&lt;/span&gt; &lt;span&gt;with&lt;/span&gt; &lt;span&gt;illustrations,&lt;/span&gt; &lt;span&gt;charts,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;bullet&lt;/span&gt; &lt;span&gt;points.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;span&gt;Context:&lt;/span&gt; &lt;br&gt;    &lt;span&gt;Provide Background Information:&lt;/span&gt; &lt;span&gt;Diabetes&lt;/span&gt; &lt;span&gt;is&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;chronic&lt;/span&gt; &lt;span&gt;condition&lt;/span&gt; &lt;span&gt;characterized&lt;/span&gt; &lt;span&gt;by&lt;/span&gt; &lt;span&gt;high&lt;/span&gt; &lt;span&gt;blood&lt;/span&gt; &lt;span&gt;sugar&lt;/span&gt; &lt;span&gt;levels.&lt;/span&gt; &lt;span&gt;Effective&lt;/span&gt; &lt;span&gt;management&lt;/span&gt; &lt;span&gt;is&lt;/span&gt; &lt;span&gt;crucial&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;prevent&lt;/span&gt; &lt;span&gt;complications&lt;/span&gt; &lt;span&gt;such&lt;/span&gt; &lt;span&gt;as&lt;/span&gt; &lt;span&gt;heart&lt;/span&gt; &lt;span&gt;disease,&lt;/span&gt; &lt;span&gt;kidney&lt;/span&gt; &lt;span&gt;failure,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;blindness.&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt; &lt;span&gt;Example:&lt;/span&gt;&lt;br&gt;    &lt;span&gt;Demonstrate the Prompt Framework:&lt;/span&gt;&lt;br&gt;      &lt;span&gt;Role:&lt;/span&gt; &lt;span&gt;As&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;healthcare&lt;/span&gt; &lt;span&gt;educator&lt;/span&gt; &lt;span&gt;or&lt;/span&gt; &lt;span&gt;nurse&lt;/span&gt; &lt;span&gt;tasked&lt;/span&gt; &lt;span&gt;with&lt;/span&gt; &lt;span&gt;creating&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;patient&lt;/span&gt; &lt;span&gt;education&lt;/span&gt; &lt;span&gt;guide&lt;/span&gt; &lt;span&gt;on&lt;/span&gt; &lt;span&gt;diabetes&lt;/span&gt; &lt;span&gt;management.&lt;/span&gt;&lt;br&gt;      &lt;span&gt;Action:&lt;/span&gt; &lt;span&gt;Compile&lt;/span&gt; &lt;span&gt;comprehensive&lt;/span&gt; &lt;span&gt;information&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;guidelines&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;help&lt;/span&gt; &lt;span&gt;patients&lt;/span&gt; &lt;span&gt;effectively&lt;/span&gt; &lt;span&gt;manage&lt;/span&gt; &lt;span&gt;their&lt;/span&gt; &lt;span&gt;diabetes.&lt;/span&gt;&lt;br&gt;      &lt;span&gt;Steps:&lt;/span&gt;&lt;br&gt;        &lt;span&gt;Research:&lt;/span&gt; &lt;span&gt;Gather&lt;/span&gt; &lt;span&gt;information&lt;/span&gt; &lt;span&gt;on&lt;/span&gt; &lt;span&gt;diabetes&lt;/span&gt; &lt;span&gt;causes,&lt;/span&gt; &lt;span&gt;symptoms,&lt;/span&gt; &lt;span&gt;complications,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;treatment&lt;/span&gt; &lt;span&gt;options.&lt;/span&gt;&lt;br&gt;        &lt;span&gt;Organize:&lt;/span&gt; &lt;span&gt;Structure&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;guide&lt;/span&gt; &lt;span&gt;into&lt;/span&gt; &lt;span&gt;sections&lt;/span&gt; &lt;span&gt;covering&lt;/span&gt; &lt;span&gt;diet,&lt;/span&gt; &lt;span&gt;exercise,&lt;/span&gt; &lt;span&gt;medication,&lt;/span&gt; &lt;span&gt;monitoring,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;prevention.&lt;/span&gt;&lt;br&gt;        &lt;span&gt;Write:&lt;/span&gt; &lt;span&gt;Draft&lt;/span&gt; &lt;span&gt;clear&lt;/span&gt; &lt;span&gt;explanations&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;practical&lt;/span&gt; &lt;span&gt;tips&lt;/span&gt; &lt;span&gt;for&lt;/span&gt; &lt;span&gt;each&lt;/span&gt; &lt;span&gt;section.&lt;/span&gt;&lt;br&gt;        &lt;span&gt;Review:&lt;/span&gt; &lt;span&gt;Ensure&lt;/span&gt; &lt;span&gt;accuracy&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;readability&lt;/span&gt; &lt;span&gt;by&lt;/span&gt; &lt;span&gt;reviewing&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;content.&lt;/span&gt;&lt;br&gt;        &lt;span&gt;Design:&lt;/span&gt; &lt;span&gt;Format&lt;/span&gt; &lt;span&gt;the&lt;/span&gt; &lt;span&gt;guide&lt;/span&gt; &lt;span&gt;for&lt;/span&gt; &lt;span&gt;easy&lt;/span&gt; &lt;span&gt;understanding&lt;/span&gt; &lt;span&gt;with&lt;/span&gt; &lt;span&gt;visuals&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;accessible&lt;/span&gt; &lt;span&gt;language.&lt;/span&gt;&lt;br&gt;      &lt;span&gt;Context:&lt;/span&gt; &lt;span&gt;Diabetes&lt;/span&gt; &lt;span&gt;is&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;prevalent&lt;/span&gt; &lt;span&gt;chronic&lt;/span&gt; &lt;span&gt;condition&lt;/span&gt; &lt;span&gt;requiring&lt;/span&gt; &lt;span&gt;proactive&lt;/span&gt; &lt;span&gt;management&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;avoid&lt;/span&gt; &lt;span&gt;complications.&lt;/span&gt;&lt;br&gt;      &lt;span&gt;Format:&lt;/span&gt;&lt;br&gt;        &lt;span&gt;Define the Desired Output Structure:&lt;/span&gt; &lt;span&gt;The&lt;/span&gt; &lt;span&gt;patient&lt;/span&gt; &lt;span&gt;education&lt;/span&gt; &lt;span&gt;guide&lt;/span&gt; &lt;span&gt;should&lt;/span&gt; &lt;span&gt;be&lt;/span&gt; &lt;span&gt;presented&lt;/span&gt; &lt;span&gt;in&lt;/span&gt; &lt;span&gt;a&lt;/span&gt; &lt;span&gt;user-friendly&lt;/span&gt; &lt;span&gt;format,&lt;/span&gt; &lt;span&gt;with&lt;/span&gt; &lt;span&gt;clear&lt;/span&gt; &lt;span&gt;headings,&lt;/span&gt; &lt;span&gt;bullet&lt;/span&gt; &lt;span&gt;points,&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;illustrations&lt;/span&gt; &lt;span&gt;to&lt;/span&gt; &lt;span&gt;enhance&lt;/span&gt; &lt;span&gt;comprehension.&lt;/span&gt;&lt;/span&gt;
+</code></pre><p>在此示例中，RASCEF 提示框架通过定义角色、操作、步骤、上下文、示例和格式来指导创建糖尿病管理患者教育指南。</p>
+<p>这种结构化方法确保生成的指南全面、信息丰富，并且可供寻求有效管理糖尿病指导的患者使用。</p>
+<blockquote>
+<p> <strong><em>结论：</em></strong></p>
+</blockquote>
+<p>总之，让我们比较一下 RTF（角色、任务、格式）、CTF（上下文、任务、格式）和 RASCEF（角色、操作、步骤、上下文、示例、格式）三种提示框架的优点，并讨论何时使用使用每一个。</p>
+<p>我们还将考虑提示的类型——零样本、单样本和少样本——以及它们如何适应每个框架。</p>
+<p>RTF（角色、任务、格式）：</p>
+<p> <strong><em>优点：</em></strong></p>
+<p>提供角色、任务和所需输出格式的清晰描述。</p>
+<p>通过关注基本元素来简化提示设计。</p>
+<p>对于角色和任务定义明确的简单任务很有用。</p>
+<p> <strong><em>何时使用：</em></strong></p>
+<p>非常适合具有明确定义的角色和特定目标的任务，例如生成对结构化查询的响应或完成具有明确格式要求的预定义任务。</p>
+<p> <strong><em>提示类型：</em></strong></p>
+<p>适用于所有类型的提示，包括零次、一次和几次，具体取决于任务的特殊性和所需的输出格式。</p>
+<p>CTF（上下文、任务、格式）：</p>
+<p> <strong><em>优点：</em></strong></p>
+<p>通过将上下文信息与任务和格式要求结合起来，提供全面的方法。</p>
+<p>帮助确保生成的响应具有相关性和情境性。</p>
+<p>对于需要了解背景信息或情境背景的任务很有用。</p>
+<p> <strong><em>何时使用：</em></strong></p>
+<p>适用于上下文信息显着影响响应相关性的任务，或者需要额外上下文才能有效构建任务的任务。</p>
+<p> <strong><em>提示类型：</em></strong></p>
+<p>对于一次性提示和几次提示有效，提供上下文可以增强对任务的理解并提高生成响应的质量。</p>
+<p>RASCEF（角色、操作、步骤、上下文、示例、格式）：</p>
+<p> <strong><em>优点：</em></strong></p>
+<p>提供高度结构化和详细的框架，指导从角色定义到示例说明和格式规范的提示设计过程。</p>
+<p>提供一种全面的方法，确保任务的所有相关方面都得到考虑和解决。</p>
+<p>对于需要分步方法、详细说明和说明性示例的复杂任务很有用。</p>
+<p> <strong><em>何时使用：</em></strong></p>
+<p>最适合涉及多个步骤、需要详细指导并从说明性示例中受益的任务。</p>
+<p> <strong><em>提示类型：</em></strong></p>
+<p>非常适合少量提示，将任务分解为步骤并提供示例可以帮助模型根据有限的输入数据生成准确的响应。</p>
+<h2 id="总之rtfctf-和-rascef-提示框架之间的选择取决于任务的复杂性所需的详细程度以及提示的类型零样本单样本或少样本每个框架都具有独特的优势并且最适合不同的提示类型允许提示设计的灵活性和适应性以有效地满足特定的任务要求">总之，RTF、CTF 和 RASCEF 提示框架之间的选择取决于任务的复杂性、所需的详细程度以及提示的类型（零样本、单样本或少样本）。每个框架都具有独特的优势，并且最适合不同的提示类型，允许提示设计的灵活性和适应性，以有效地满足特定的任务要求。</h2>
+<p>参考：Udemy — in28Minutes 官方 — 初学者的生成式 AI — Google Gemini 和 Google Cloud</p>
+
+        </div>
+
+        <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/sblig" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/sblig', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">订阅每周最新ChatGPT技术和动向</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="邮箱订阅" /> </form>
+
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="http://localhost:1313/">知识铺</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="http://localhost:1313/post/202403/prompt/Power-of-Prompt-Design.-Introduction-Maximize-Language-model-by-Nagaraj-R-Mar-2024-Medium/">http://localhost:1313/post/202403/prompt/Power-of-Prompt-Design.-Introduction-Maximize-Language-model-by-Nagaraj-R-Mar-2024-Medium/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+        <li><strong>免责声明：</strong>本页面内容均来源于站内编辑发布，部分信息来源互联网，并不意味着本站赞同其观点或者证实其内容的真实性，如涉及版权等问题，请立即联系客服进行更改或删除，保证您的合法权益。转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。也可以邮件至 sblig@126.com</li>
+    </ul>
+</div>
+<br/>
+
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/202403/prompt/%E6%8E%8C%E6%8F%A1%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF%E5%88%B6%E4%BD%9C%E6%9C%89%E6%95%88-AI-%E8%BE%93%E5%85%A5%E7%9A%84%E7%BB%BC%E5%90%88%E6%8C%87%E5%8D%97-%E7%94%B1-NILESH-AMIGOO-3%E6%9C%88-2024-%E4%B8%AD%E7%AD%89---Mastering-the-Art-of-Prompt-Engineering-A-Comprehensive-Guide-to-Crafting-Effective-AI-Inputs-by-NILESH-AMIGOO-Mar-2024/">掌握提示工程的艺术：制作有效 AI 输入的综合指南 由 NILESH AMIGOO 3月， 2024 中等 --- Mastering the Art of Prompt Engineering A Comprehensive Guide to Crafting Effective AI Inputs  by NILESH AMIGOO  Mar, 2024   -- 知识铺</a></li>
+        
+        <li><a href="/post/202403/prompt/%E4%BB%80%E4%B9%88%E6%98%AF-AI-%E7%9A%84%E7%B3%BB%E7%BB%9F%E6%8F%90%E7%A4%BA%E7%AE%80%E8%80%8C%E8%A8%80%E4%B9%8B%E7%B3%BB%E7%BB%9F%E6%8F%90%E7%A4%BA%E6%98%AF...-%E4%BD%9C%E8%80%85-Michael-Humor-tengenius.ai-3%E6%9C%88-2024-%E4%B8%AD%E7%AD%89---Whats-a-System-Prompt-for-AI.-In-short-a-system-prompt-is-a-by-Michael-Humor-tengenius.ai-Mar-2/">什么是 AI 的系统提示？简而言之，“系统提示”是... 作者 Michael Humor （tengenius.ai） 3月， 2024 中等 --- What’s a System Prompt for AI. In short, a “system prompt” is a…  by Michael Humor (tengenius.ai)  Mar, 2 -- 知识铺</a></li>
+        
+        <li><a href="/post/202403/prompt/%E6%8F%90%E7%A4%BA%E8%AF%AD%E5%9C%A8AI%E5%AD%A6%E4%B9%A0%E5%92%8C%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E4%BD%9C%E7%94%A8/">提示语在AI学习和开发中的作用 -- 知识铺</a></li>
+        
+        <li><a href="/post/202403/prompt/Prompt-DesignAI%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E5%85%A8%E9%9D%A2%E6%8C%87%E5%8D%97/">Prompt Design：AI开发者的全面指南 -- 知识铺</a></li>
+        
+        <li><a href="/post/202403/prompt/%E7%90%86%E8%A7%A3%E6%8F%90%E7%A4%BA%E8%A7%A3%E9%94%81%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%BD%9C%E5%8A%9B%E7%9A%84%E5%85%B3%E9%94%AE/">理解提示：解锁人工智能潜力的关键 -- 知识铺</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='/tags/202403'>202403</a></li>
+                
+                <li><a href='/tags/prompt'>prompt</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "zshipu/gpt"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2024 <a href="http://localhost:1313/">GPT资讯  --  知识铺 By 知识铺</a>
+        
+        | <a rel="nofollow" target="_blank" href="https://beian.miit.gov.cn/">浙 ICP 备19032823号-1</a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='http://localhost:1313/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://localhost:1313/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://localhost:1313/post/202403/prompt/%E6%9C%80%E5%90%8E%E7%9A%84%E5%85%89%E6%98%8E%E5%AE%88%E6%8A%A4%E8%80%85%E6%8F%90%E7%A4%BA%E9%80%9A%E8%BF%87-KOWSKY-2024-%E5%B9%B4-3-%E6%9C%88-%E4%B8%AD%E7%AD%89%E7%9A%84---The-Last-LightKeeper.-Prompt-by-KOWSKY-Mar-2024-Medium/" title="最后的光明守护者。提示通过 KOWSKY  2024 年 3 月 中等的 --- The Last LightKeeper. Prompt  by KOWSKY  Mar, 2024  Medium -- 知识铺">最后的光明守护者。提示通过 KOWSKY  2024 年 3 月 中等的 --- The Last LightKeeper. Prompt  by KOWSKY  Mar, 2024  Medium -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/202403/prompt/%E9%9A%8F%E7%9D%80-LLM-%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E4%B8%8A%E4%B8%8B%E6%96%87%E9%95%BF%E5%BA%A6%E7%9A%84%E5%A2%9E%E5%8A%A0RAG-%E6%98%AF%E5%90%A6%E6%98%AF%E4%B8%80%E4%B8%AA%E7%9F%AD%E6%9C%9F%E6%9C%AF%E8%AF%AD-%E9%80%9A%E8%BF%87%E6%AF%94%E5%88%A9%E7%BA%BD%E6%B3%A2%E7%89%B9-2024-%E5%B9%B4-3-%E6%9C%88-%E4%B8%AD%E7%AD%89%E7%9A%84---Is-RAG-a-short-termer-as-context-lengths-increase-for-LLM-applications-by-Billy-Newport-Mar-2024-Medium/" title="随着 LLM 应用程序上下文长度的增加，RAG 是否是一个短期术语？ 通过比利·纽波特  2024 年 3 月 中等的 --- Is RAG a short termer as context lengths increase for LLM applications  by Billy Newport  Mar, 2024  Medium -- 知识铺">随着 LLM 应用程序上下文长度的增加，RAG 是否是一个短期术语？ 通过比利·纽波特  2024 年 3 月 中等的 --- Is RAG a short termer as context lengths increase for LLM applications  by Billy Newport  Mar, 2024  Medium -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/202403/prompt/%E8%B5%A4%E5%A3%81%E8%89%BA%E6%9C%AF%E6%8C%91%E6%88%98%E7%9A%84%E5%88%9B%E6%84%8F%E6%8F%90%E7%A4%BA%E4%B8%80%E6%AC%A1%E4%B8%80%E4%B8%AA%E6%8F%90%E7%A4%BA%E6%BF%80%E5%8A%B1%E8%89%BA%E6%9C%AF%E5%AE%B6%E9%80%9A%E8%BF%87-Purplebubblestudio-2024-%E5%B9%B4-3-%E6%9C%88-%E4%B8%AD%E7%AD%89%E7%9A%84---Creative-Prompts-for-Chibi-Art-Challenges-Inspiring-Artists-One-Prompt-at-a-Time-by-Purplebubblestudio-Mar-2024-M/" title="赤壁艺术挑战的创意提示：一次一个提示激励艺术家通过 Purplebubblestudio  2024 年 3 月 中等的 --- Creative Prompts for Chibi Art Challenges Inspiring Artists One Prompt at a Time  by Purplebubblestudio  Mar, 2024  M -- 知识铺">赤壁艺术挑战的创意提示：一次一个提示激励艺术家通过 Purplebubblestudio  2024 年 3 月 中等的 --- Creative Prompts for Chibi Art Challenges Inspiring Artists One Prompt at a Time  by Purplebubblestudio  Mar, 2024  M -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/202403/prompt/7-%E7%A7%8D%E6%97%A5%E8%AE%B0%E6%8F%90%E7%A4%BA%E6%AD%A3%E5%BF%B5%E5%88%9D%E5%AD%A6%E8%80%85%E5%9D%9A%E6%8C%81%E4%B8%93%E6%B3%A8%E5%92%8C%E4%B8%93%E6%B3%A8%E7%9A%84%E7%BB%83%E4%B9%A0/" title="7 种日记提示正念初学者坚持专注和专注的练习 -- 知识铺">7 种日记提示正念初学者坚持专注和专注的练习 -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/202403/prompt/7-ChatGPT-%E6%8F%90%E7%A4%BA%E5%A2%9E%E5%BC%BA%E6%82%A8%E7%9A%84-Instagram-%E6%B8%B8%E6%88%8F-%E4%B8%AD%E7%AD%89%E7%9A%84---7-ChatGPT-Prompts-to-Boost-Your-Instagram-Game-Medium/" title="7 ChatGPT 提示增强您的 Instagram 游戏 中等的 --- 7 ChatGPT Prompts to Boost Your Instagram Game  Medium -- 知识铺">7 ChatGPT 提示增强您的 Instagram 游戏 中等的 --- 7 ChatGPT Prompts to Boost Your Instagram Game  Medium -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/202403/prompt/%E6%8E%8C%E6%8F%A1-ChatGPT-%E6%8F%90%E7%A4%BA%E8%8E%B7%E5%BE%97%E6%9C%80%E4%BD%B3%E7%BB%93%E6%9E%9C%E7%9A%84%E7%BB%88%E6%9E%81%E6%8C%87%E5%8D%97-%E9%80%9A%E8%BF%87-%E6%A2%85%E6%A0%BC%E6%A2%85%E5%A1%94-2024-%E5%B9%B4-3-%E6%9C%88-%E4%B8%AD%E7%AD%89%E7%9A%84---Mastering-ChatGPT-Prompts-Your-Ultimate-Guide-for-Optimal-Results-by-Megh-Mehta-Mar-2024-Medium/" title="掌握 ChatGPT 提示：获得最佳结果的终极指南 通过 梅格·梅塔  2024 年 3 月 中等的 --- Mastering ChatGPT Prompts Your Ultimate Guide for Optimal Results  by Megh Mehta  Mar, 2024  Medium -- 知识铺">掌握 ChatGPT 提示：获得最佳结果的终极指南 通过 梅格·梅塔  2024 年 3 月 中等的 --- Mastering ChatGPT Prompts Your Ultimate Guide for Optimal Results  by Megh Mehta  Mar, 2024  Medium -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/202403/prompt/Power-of-Prompt-Design.-Introduction-Maximize-Language-model-by-Nagaraj-R-Mar-2024-Medium/" title="提示设计的力量 -- 知识铺">提示设计的力量 -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/202403/prompt/%E6%8E%8C%E6%8F%A1%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF%E5%88%B6%E4%BD%9C%E6%9C%89%E6%95%88-AI-%E8%BE%93%E5%85%A5%E7%9A%84%E7%BB%BC%E5%90%88%E6%8C%87%E5%8D%97-%E7%94%B1-NILESH-AMIGOO-3%E6%9C%88-2024-%E4%B8%AD%E7%AD%89---Mastering-the-Art-of-Prompt-Engineering-A-Comprehensive-Guide-to-Crafting-Effective-AI-Inputs-by-NILESH-AMIGOO-Mar-2024/" title="掌握提示工程的艺术：制作有效 AI 输入的综合指南 由 NILESH AMIGOO 3月， 2024 中等 --- Mastering the Art of Prompt Engineering A Comprehensive Guide to Crafting Effective AI Inputs  by NILESH AMIGOO  Mar, 2024   -- 知识铺">掌握提示工程的艺术：制作有效 AI 输入的综合指南 由 NILESH AMIGOO 3月， 2024 中等 --- Mastering the Art of Prompt Engineering A Comprehensive Guide to Crafting Effective AI Inputs  by NILESH AMIGOO  Mar, 2024   -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/202403/prompt/%E4%BB%80%E4%B9%88%E6%98%AF-AI-%E7%9A%84%E7%B3%BB%E7%BB%9F%E6%8F%90%E7%A4%BA%E7%AE%80%E8%80%8C%E8%A8%80%E4%B9%8B%E7%B3%BB%E7%BB%9F%E6%8F%90%E7%A4%BA%E6%98%AF...-%E4%BD%9C%E8%80%85-Michael-Humor-tengenius.ai-3%E6%9C%88-2024-%E4%B8%AD%E7%AD%89---Whats-a-System-Prompt-for-AI.-In-short-a-system-prompt-is-a-by-Michael-Humor-tengenius.ai-Mar-2/" title="什么是 AI 的系统提示？简而言之，“系统提示”是... 作者 Michael Humor （tengenius.ai） 3月， 2024 中等 --- What’s a System Prompt for AI. In short, a “system prompt” is a…  by Michael Humor (tengenius.ai)  Mar, 2 -- 知识铺">什么是 AI 的系统提示？简而言之，“系统提示”是... 作者 Michael Humor （tengenius.ai） 3月， 2024 中等 --- What’s a System Prompt for AI. In short, a “system prompt” is a…  by Michael Humor (tengenius.ai)  Mar, 2 -- 知识铺</a>
+    </li>
+    
+    <li>
+        <a href="http://localhost:1313/post/202403/prompt/%E6%8F%90%E7%A4%BA%E8%AF%AD%E5%9C%A8AI%E5%AD%A6%E4%B9%A0%E5%92%8C%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E4%BD%9C%E7%94%A8/" title="提示语在AI学习和开发中的作用 -- 知识铺">提示语在AI学习和开发中的作用 -- 知识铺</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">福利派送</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?source=5176.11533457&amp;userCode=tzm8r4hc" title="【2019双12】ALL IN CLoud 低至1折" target="_blank" style="color:red">
+                
+                    <img src="https://img.alicdn.com/tfs/TB1_rYHo7P2gK0jSZPxXXacQpXa-690-388.jpg">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?source=5176.11533457&amp;userCode=tzm8r4hc" title="助力产业智慧升级，云服务器首年88元起，更有千元代金券礼包免费领！" target="_blank" style="color:red">
+                
+                    <img src="https://upload-dianshi-1255598498.file.myqcloud.com/345-7c71532bd4935fbdd9a67c1a71e577b1767b805c.200%E7%89%88%E6%9C%ACB.jpg">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?source=5176.11533457&amp;userCode=tzm8r4hc" title="【渠道专享低折扣】11月特惠 限时2折" target="_blank" style="color:red">
+                
+                    <img src="https://img.alicdn.com/tfs/TB1hblJl7Y2gK0jSZFgXXc5OFXa-750-400.jpg">
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/categories/'>分类</a></h3>
+<ul class="widget-list">
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/tags/'>标签</a></h3>
+<div class="tagcloud">
+    
+    <a href="http://localhost:1313/tags/202403/">202403</a>
+    
+    <a href="http://localhost:1313/tags/AI/">AI</a>
+    
+    <a href="http://localhost:1313/tags/GPT/">GPT</a>
+    
+    <a href="http://localhost:1313/tags/LLM/">LLM</a>
+    
+    <a href="http://localhost:1313/tags/Midjourney/">Midjourney</a>
+    
+    <a href="http://localhost:1313/tags/prompt/">Prompt</a>
+    
+    <a href="http://localhost:1313/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://geek.zshipu.com//" title="知识铺的博客">知识铺的博客</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://localhost:1313/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script
+  src="https://js.sentry-cdn.com/5c69c7b20860be9ded39ad4778ddc21e.min.js"
+  crossorigin="anonymous"
+></script>
+
+</html>
