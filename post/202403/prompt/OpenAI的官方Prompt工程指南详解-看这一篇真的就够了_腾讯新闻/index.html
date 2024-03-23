@@ -254,11 +254,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>比如还是“我断网了咋整”这个问题：</p>
 <p>步骤1，先判断问题类别：</p>
 <p>
-        <img class="mx-auto" alt="图片" src="https://inews.gtimg.com/news_bt/O9OW9W0qxmRIfuPj678kWRw2njvud-1rFPV4B7nV19_cYAA/641" />   
+        <img class="mx-auto" alt="图片" src="https://cdn.jsdelivr.net/gh/zshipu/imagesv2@main/2023/202403212251679.png" />   
     </p>
 <p>现在，大模型根据步骤1，知道“我断网了咋整”是属于技术支持中的故障排除了，我们就可以再继续步骤2：</p>
 <p>
-        <img class="mx-auto" alt="图片" src="https://inews.gtimg.com/news_bt/OKmYwbZZZZw07DtiAsE9aD1Ykawhp6WLBaf5hzTtb2aZwAA/641" />   
+        <img class="mx-auto" alt="图片" src="https://cdn.jsdelivr.net/gh/zshipu/imagesv2@main/2023/202403212251305.png" />   
     </p>
 <p>这时候，用户的“我断网了咋整”就能得到非常有效的回答了。</p>
 <p>2. 对于需要很长对话的对话应用，总结或过滤之前的对话</p>
@@ -271,7 +271,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>其实就是总结几百页PDF文档的原理，比如让大模型总结一本书，肯定是超Token上限了嘛，所以可以使用一系列查询来总结文档的每个部分。章节摘要可以连接和总结，生成摘要的摘要。这个过程可以递归地进行，直到总结整个文档。 OpenAI 在之前的研究中已经使用 GPT-3 的变体研究了这种总结书籍的过程的有效性。</p>
 <p>详细的可以看这篇文档：https://openai.com/research/summarizing-books</p>
 <p>
-        <img class="mx-auto" alt="图片" src="https://inews.gtimg.com/news_bt/OlcExQbvVdQY4xjYcVSCB77N5E_bxAJoqKS7OplC4p1cEAA/641" />   
+        <img class="mx-auto" alt="图片" src="https://cdn.jsdelivr.net/gh/zshipu/imagesv2@main/2023/202403212251100.png" />   
     </p>
 <p>四. 给模型时间“思考”</p>
 <p>think step by step（一步步思考）这个神级提示词的源头。其实也就是链式思考（CoT），Chain-of-Thought Prompting，非常非常有用的一个策略。</p>
@@ -286,15 +286,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>所以就有了这么一个内心独白的技巧。内心独白的想法是让模型将原本对用户隐藏的部分输出放入结构化格式中，以便于解析它们。然后，在向用户呈现输出之前，将解析输出并且仅使部分输出可见。</p>
 <p>比如：</p>
 <p>
-        <img class="mx-auto" alt="图片" src="https://inews.gtimg.com/news_bt/OXUnFZuLM4-B6mmRq5UhiAcmSUN7c6wtNxqUP1GeNSDyIAA/641" />   
+        <img class="mx-auto" alt="图片" src="https://cdn.jsdelivr.net/gh/zshipu/imagesv2@main/2023/202403212251741.png" />   
     </p>
 <p>接下来，我们可以让模型使用所有可用信息来评估学生解决方案的正确性。</p>
 <p>
-        <img class="mx-auto" alt="图片" src="https://inews.gtimg.com/news_bt/OGwRFeawKf33a4XVZY17IKQ2WEeJVMEVk1_4Vld_qL23cAA/641" />   
+        <img class="mx-auto" alt="图片" src="https://cdn.jsdelivr.net/gh/zshipu/imagesv2@main/2023/202403212251017.png" />   
     </p>
 <p>最后，我们可以让大模型使用自己的分析来以乐于助人的导师的角色构建回复。</p>
 <p>
-        <img class="mx-auto" alt="图片" src="https://inews.gtimg.com/news_bt/ONE7sGvsOQkba7F6Le19e3kcqzLCpgB0qA-p4Dz2ul0jMAA/641" />   
+        <img class="mx-auto" alt="图片" src="https://cdn.jsdelivr.net/gh/zshipu/imagesv2@main/2023/202403212252267.png" />   
     </p>
 <p>用多次跟API通讯的方式，同时隐藏模型的推理过程，来完成一次学生的辅导方案对话。</p>
 <p>3. 询问模型在之前的过程中是否遗漏了什么内容</p>
@@ -329,7 +329,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>OpenAI这个Prompt engineering写的相当详细了，我真的绝对，比市面上太多太多的框架和课程都要好。</p>
 <p>为了方便大家偶尔复习，我也做了一张脑图，可以跟文章结合着看。</p>
 <p>
-        <img class="mx-auto" alt="图片" src="https://inews.gtimg.com/news_bt/OQqTP-f2Ksy-PsGfivkFmN5VYVrbm72eM2xeCSo1rI_0wAA/641" />   
+        <img class="mx-auto" alt="图片" src="https://cdn.jsdelivr.net/gh/zshipu/imagesv2@main/2023/202403212252668.png" />   
     </p>
 <p>说实话，我一直认为，Prompt这个东西，就是日常表达能力的一个映射。</p>
 <p>日常中跟人沟通能力很强的人，其实不知道这些技巧，一样能跟大模型协同的很好。</p>
@@ -462,6 +462,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <ul class="widget-list">
     
     <li>
+        <a href="https://gpt.zshipu.com/post/202403/prompt/Stability-AI-%E9%80%9A%E8%BF%87-Stable-Video-3D-%E4%B8%BA%E8%A7%86%E9%A2%91%E5%B8%A6%E6%9D%A5%E4%BA%86%E6%96%B0%E7%BB%B4%E5%BA%A6-%E5%88%9B%E4%B8%9A%E8%8A%82%E6%8B%8D---Stability-AI-brings-a-new-dimension-to-video-with-Stable-Video-3D-VentureBeat/" title="Stability AI 通过 Stable Video 3D 为视频带来了新维度 创业节拍 --- Stability AI brings a new dimension to video with Stable Video 3D  VentureBeat -- 知识铺">Stability AI 通过 Stable Video 3D 为视频带来了新维度 创业节拍 --- Stability AI brings a new dimension to video with Stable Video 3D  VentureBeat -- 知识铺</a>
+    </li>
+    
+    <li>
         <a href="https://gpt.zshipu.com/post/202403/prompt/%E4%B8%BA%E6%82%A8%E7%9A%84-AI-%E9%A1%B9%E7%9B%AE%E9%9B%87%E7%94%A8-GPT-Prompt-%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E6%8C%87%E5%8D%97---A-Guide-on-Hiring-GPT-Prompt-Engineers-for-Your-AI-Project/" title="为您的 AI 项目雇用 GPT Prompt 工程师的指南 --- A Guide on Hiring GPT Prompt Engineers for Your AI Project -- 知识铺">为您的 AI 项目雇用 GPT Prompt 工程师的指南 --- A Guide on Hiring GPT Prompt Engineers for Your AI Project -- 知识铺</a>
     </li>
     
@@ -495,10 +499,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <li>
         <a href="https://gpt.zshipu.com/post/202403/prompt/OpenAI%E7%9A%84%E5%AE%98%E6%96%B9Prompt%E5%B7%A5%E7%A8%8B%E6%8C%87%E5%8D%97%E8%AF%A6%E8%A7%A3-%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E7%9C%9F%E7%9A%84%E5%B0%B1%E5%A4%9F%E4%BA%86_%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB/" title="OpenAI的官方Prompt工程指南详解 - 看这一篇真的就够了_腾讯新闻 -- 知识铺">OpenAI的官方Prompt工程指南详解 - 看这一篇真的就够了_腾讯新闻 -- 知识铺</a>
-    </li>
-    
-    <li>
-        <a href="https://gpt.zshipu.com/post/202403/prompt/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E8%AE%A9%E4%BD%A0%E6%88%90%E4%B8%BAprompt%E4%B8%93%E5%AE%B6-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/" title="一篇文章让你成为prompt专家 -- 知识铺">一篇文章让你成为prompt专家 -- 知识铺</a>
     </li>
     
 </ul>
@@ -556,7 +556,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <a href="https://gpt.zshipu.com/tags/Midjourney/">Midjourney</a>
     
-    <a href="https://gpt.zshipu.com/tags/prompt/">prompt</a>
+    <a href="https://gpt.zshipu.com/tags/prompt/">Prompt</a>
     
     <a href="https://gpt.zshipu.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
     
