@@ -2,270 +2,179 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on GPT资讯  --  知识铺</title>
-    <link>http://localhost:1313/post/</link>
+    <link>https://gpt.zshipu.com/post/</link>
     <description>Recent content in Posts on GPT资讯  --  知识铺</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 18 Mar 2024 15:04:20 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Mar 2024 17:23:03 +0000</lastBuildDate>
+    <atom:link href="https://gpt.zshipu.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Stability AI 通过 Stable Video 3D 为视频带来了新维度 创业节拍 --- Stability AI brings a new dimension to video with Stable Video 3D  VentureBeat -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/Stability-AI-%E9%80%9A%E8%BF%87-Stable-Video-3D-%E4%B8%BA%E8%A7%86%E9%A2%91%E5%B8%A6%E6%9D%A5%E4%BA%86%E6%96%B0%E7%BB%B4%E5%BA%A6-%E5%88%9B%E4%B8%9A%E8%8A%82%E6%8B%8D---Stability-AI-brings-a-new-dimension-to-video-with-Stable-Video-3D-VentureBeat/</link>
-      <pubDate>Mon, 18 Mar 2024 15:04:20 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/Stability-AI-%E9%80%9A%E8%BF%87-Stable-Video-3D-%E4%B8%BA%E8%A7%86%E9%A2%91%E5%B8%A6%E6%9D%A5%E4%BA%86%E6%96%B0%E7%BB%B4%E5%BA%A6-%E5%88%9B%E4%B8%9A%E8%8A%82%E6%8B%8D---Stability-AI-brings-a-new-dimension-to-video-with-Stable-Video-3D-VentureBeat/</guid>
-      <description>2024 年 3 月 18 日 下午 5:22 图片来源：VentureBeat 使用 Stable Diffusion XL 制作 3 月 27 日与波士顿的领导人一起度过一个独特的社交之夜、见解和对话。在此请求邀请。 随着 Stable Video 3D (SV3D) 的发布，Stability AI 今天正在扩大其生成式 AI 模型组合。 顾名思义，新模型是一款用于渲染 3D 视频的新一代 AI 视频工具。 Stability AI 一直在</description>
+      <title>Prompt设计优化技巧分享 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240325/prompt/Prompt%E8%AE%BE%E8%AE%A1%E4%BC%98%E5%8C%96%E6%8A%80%E5%B7%A7%E5%88%86%E4%BA%AB--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 17:23:03 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240325/prompt/Prompt%E8%AE%BE%E8%AE%A1%E4%BC%98%E5%8C%96%E6%8A%80%E5%B7%A7%E5%88%86%E4%BA%AB--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>举个例子，当你让一个学生在1秒钟内回复你3424213+5421321321=?等于多少？在学生没有打草稿并且在1秒钟回复你的情况下，除非他提前背过答案或者是神算，否则他可能随便编你一个随机的错误答案给你。 GPT就好像这个学生一样，你需要让它有一定空间分析你提出的问题，打个推理过</description>
     </item>
     <item>
-      <title>为您的 AI 项目雇用 GPT Prompt 工程师的指南 --- A Guide on Hiring GPT Prompt Engineers for Your AI Project -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/%E4%B8%BA%E6%82%A8%E7%9A%84-AI-%E9%A1%B9%E7%9B%AE%E9%9B%87%E7%94%A8-GPT-Prompt-%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E6%8C%87%E5%8D%97---A-Guide-on-Hiring-GPT-Prompt-Engineers-for-Your-AI-Project/</link>
-      <pubDate>Mon, 18 Mar 2024 14:59:20 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/%E4%B8%BA%E6%82%A8%E7%9A%84-AI-%E9%A1%B9%E7%9B%AE%E9%9B%87%E7%94%A8-GPT-Prompt-%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E6%8C%87%E5%8D%97---A-Guide-on-Hiring-GPT-Prompt-Engineers-for-Your-AI-Project/</guid>
-      <description>我们都曾因人工智能给出的错误、不准确或直接捏造的答案而苦苦挣扎。咒骂人工智能或刷新响应提要不会阻止你拔头发。 优化响应的最佳解决方案是由专业的 GPT 提示工程师团队组成。 这些工程师知道如何从您的人工智能项目中获得最佳结果，并每次都会为您提供一组提示来帮助您的业务用例。 雇用熟练的专业人员可</description>
+      <title>大型语言模型与RAG的混合未来：实时数据与上下文长度的突破 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E4%B8%8ERAG%E7%9A%84%E6%B7%B7%E5%90%88%E6%9C%AA%E6%9D%A5%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E9%95%BF%E5%BA%A6%E7%9A%84%E7%AA%81%E7%A0%B4--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 15:12:22 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E4%B8%8ERAG%E7%9A%84%E6%B7%B7%E5%90%88%E6%9C%AA%E6%9D%A5%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E4%B8%8E%E4%B8%8A%E4%B8%8B%E6%96%87%E9%95%BF%E5%BA%A6%E7%9A%84%E7%AA%81%E7%A0%B4--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>两年前 ChatGPT 出现后，每个人都纷纷加入。每个公司董事会/首席执行官都会询问他们的技术领导者“我们在人工智能方面正在做什么？” 我认为最初有两条路。根据您的数据微调您自己的LLM。这并不能真正扩展。微调LLM需要很长时间，而且价格昂贵。如果您需要 LLM 的实时更新，则无法执行此操作。 接下来，人们</description>
     </item>
     <item>
-      <title>2024 年 9 个最佳人工智能提示生成器（ChatGPT、Midjourney 等） - The Tech Edvocate --- 9 Best AI Prompt Generators 2024 (ChatGPT, Midjourney &amp; More) - The Tech Edvocate -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/2024-%E5%B9%B4-9-%E4%B8%AA%E6%9C%80%E4%BD%B3%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA%E7%94%9F%E6%88%90%E5%99%A8ChatGPTMidjourney-%E7%AD%89-The-Tech-Edvocate---9-Best-AI-Prompt-Generators-2024-ChatGPT-Midjourney-More-The-Tech-Edvocate/</link>
-      <pubDate>Mon, 18 Mar 2024 14:58:20 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/2024-%E5%B9%B4-9-%E4%B8%AA%E6%9C%80%E4%BD%B3%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8F%90%E7%A4%BA%E7%94%9F%E6%88%90%E5%99%A8ChatGPTMidjourney-%E7%AD%89-The-Tech-Edvocate---9-Best-AI-Prompt-Generators-2024-ChatGPT-Midjourney-More-The-Tech-Edvocate/</guid>
-      <description>随着人工智能技术的发展，提示生成器已成为创意人员、营销人员、作家和技术爱好者生成内容、解决问题或创建详细场景的重要工具。 进入 2024 年，众多人工智能提示生成器已在行业中崭露头角。以下是 2024 年 9 款最佳 AI 提示生成器，每款都具有独特的功能： 1.OpenAI的ChatGPT：这种对话式AI的发展</description>
+      <title>赤壁艺术挑战的创意提示：一次一个提示激励艺术家 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/%E8%B5%A4%E5%A3%81%E8%89%BA%E6%9C%AF%E6%8C%91%E6%88%98%E7%9A%84%E5%88%9B%E6%84%8F%E6%8F%90%E7%A4%BA%E4%B8%80%E6%AC%A1%E4%B8%80%E4%B8%AA%E6%8F%90%E7%A4%BA%E6%BF%80%E5%8A%B1%E8%89%BA%E6%9C%AF%E5%AE%B6--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 15:11:22 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/%E8%B5%A4%E5%A3%81%E8%89%BA%E6%9C%AF%E6%8C%91%E6%88%98%E7%9A%84%E5%88%9B%E6%84%8F%E6%8F%90%E7%A4%BA%E4%B8%80%E6%AC%A1%E4%B8%80%E4%B8%AA%E6%8F%90%E7%A4%BA%E6%BF%80%E5%8A%B1%E8%89%BA%E6%9C%AF%E5%AE%B6--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>赤壁艺术挑战的创意提示：一次一个提示激励艺术家 [ ](https://.com/@purplebubblestudio?source=post_page&amp;mdash;&amp;ndash;2ecb4ac340df&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;) 由 Purple Bubble Studio 创建的《赤壁》角色。 赤壁艺术挑战赛以其异想天开的魅力和无限的创造力继续吸引着世界各地的艺术家。 无论您是经验丰富的《赤壁》艺术家，还是刚刚涉足可爱角色的世界，创意提示都可以激发您的想象力，激发令人愉悦的艺术作品。 在本文中，我</description>
     </item>
     <item>
-      <title>一文搞懂 Prompt 编程v2 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82-Prompt-%E7%BC%96%E7%A8%8Bv2/</link>
-      <pubDate>Mon, 18 Mar 2024 14:56:20 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82-Prompt-%E7%BC%96%E7%A8%8Bv2/</guid>
-      <description>Prompt 编程是一种基于自然语言处理的编程方式，属于一种创新的编程范式，通过向大模型提供 Prompt（提示词），引导其生成特定的文本输出。 与传统的编码方式相比，这种方法更注重直观性和用户友好性，使得即使非专业程序员也能够通过简单的自然语言交互实现复杂的任务。 二、产生背景 随着人工智能技术的</description>
+      <title>最后的光明守护者 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/%E6%9C%80%E5%90%8E%E7%9A%84%E5%85%89%E6%98%8E%E5%AE%88%E6%8A%A4%E8%80%85--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 15:10:22 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/%E6%9C%80%E5%90%8E%E7%9A%84%E5%85%89%E6%98%8E%E5%AE%88%E6%8A%A4%E8%80%85--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>最后的光明守护者 迅速的 想象一个世界，除了一座灯塔外，所有灯塔都已实现自动化。这座最后的灯塔仍然需要人类看守，不仅是为了维护，而且因为它发出的光并不普通——它不仅仅是引导海上的船只。 你是最后的灯塔守护者，负责照管这座古老的灯塔。一个风雨交加的夜晚，当你从孤零零的塔楼上眺望汹涌的大海</description>
     </item>
     <item>
-      <title>一文搞懂 Prompt 编程 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82-Prompt-%E7%BC%96%E7%A8%8B/</link>
-      <pubDate>Mon, 18 Mar 2024 14:54:20 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82-Prompt-%E7%BC%96%E7%A8%8B/</guid>
-      <description>一文搞懂 Prompt 编程 Prompt 编程是一种通过自然语言向人工智能模型发出指令，让模型完成特定任务的新兴编程范式。它允许用户使用简单易懂的语言，而不是复杂的代码，来操控人工智能模型，降低了编程门槛，让更多人可以参与到人工智能应用的开发中。 Prompt 编程的核心思想是将用户意图表达为自然语言指令，并将其传递给</description>
+      <title>揭开提示工程的神秘面纱：掌握生成式AI的关键 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/%E6%8F%AD%E5%BC%80%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E7%9A%84%E7%A5%9E%E7%A7%98%E9%9D%A2%E7%BA%B1%E6%8E%8C%E6%8F%A1%E7%94%9F%E6%88%90%E5%BC%8FAI%E7%9A%84%E5%85%B3%E9%94%AE--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 15:09:22 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/%E6%8F%AD%E5%BC%80%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E7%9A%84%E7%A5%9E%E7%A7%98%E9%9D%A2%E7%BA%B1%E6%8E%8C%E6%8F%A1%E7%94%9F%E6%88%90%E5%BC%8FAI%E7%9A%84%E5%85%B3%E9%94%AE--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>揭开提示工程的神秘面纱 [ ](https://.com/@inspirexnewsletter?source=post_page&amp;mdash;&amp;ndash;6ce2c29474e2&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;) 掌握生成式 AI 的关键 在像 ChatGPT 这样的生成式 AI 正在成为我们数字互动不可或缺的时代，了解“提示工程”的艺术和科学至关重要。这不仅关乎你问什么，还关乎你如何问。 本文深入探讨了提示工程的细微差别，为用户体验设计师和日常用户提供了见解，以充分利用生成式人工智能的潜力。 究</description>
     </item>
     <item>
-      <title>什么是Prompt？——深度学习中的重要概念 - luch的博客 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/%E4%BB%80%E4%B9%88%E6%98%AFPrompt%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5-luch%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Mon, 18 Mar 2024 14:52:20 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/%E4%BB%80%E4%B9%88%E6%98%AFPrompt%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5-luch%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-      <description>在人工智能领域，Prompt 是一个非常重要的概念。它是指一段给定的文本或语句，用于启动和引导机器学习模型生成特定类型、主题或格式的输出。在最近几年中，随着深度学习技术不断发展和进步，在自然语言处理、图像识别等领域中广泛使用了 Prompt 技术。 本篇文章将对 Prompt 的定义、应用场景及其优缺点进行详细</description>
+      <title>利用智能使用人工智能：深入了解提示工程 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/%E5%88%A9%E7%94%A8%E6%99%BA%E8%83%BD%E4%BD%BF%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 15:08:22 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/%E5%88%A9%E7%94%A8%E6%99%BA%E8%83%BD%E4%BD%BF%E7%94%A8%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>提示工程 [ ](https://.com/@researchgraph?source=post_page&amp;mdash;&amp;ndash;21112dbfc789&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;) 利用智能使用人工智能：深入了解提示工程 图片来自 Unsplash。 作者 德鲁夫·古普塔（兰花：0009-0004-7109-5403） 介绍 大型语言模型（LLMs）已成为自然语言处理（NLP）领域的新常态。凭借其改进的性能和生成能力，世界各地的人们都依赖它来完成各种任务。 然</description>
     </item>
     <item>
-      <title>Effective Prompt 编写高质量Prompt的14个有效方法 - 知乎 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/Effective-Prompt-%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FPrompt%E7%9A%8414%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95-%E7%9F%A5%E4%B9%8E/</link>
-      <pubDate>Mon, 18 Mar 2024 14:51:20 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/Effective-Prompt-%E7%BC%96%E5%86%99%E9%AB%98%E8%B4%A8%E9%87%8FPrompt%E7%9A%8414%E4%B8%AA%E6%9C%89%E6%95%88%E6%96%B9%E6%B3%95-%E7%9F%A5%E4%B9%8E/</guid>
-      <description>提示工程（Prompt Engineering）是大模型时代下新兴的文字艺术，熟练掌握提示工程的基本设计准则，将有助于普通用户与Prompt工程师撰写出更优质的Prompt。在本文中，笔者总结了一些常见的Prompt设计准则，希望能帮助大家更好地驾驭大模型这一强大的生产力工具。 第1</description>
+      <title>提示工程技术与应用示例 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8%E7%A4%BA%E4%BE%8B--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 15:07:22 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8%E7%A4%BA%E4%BE%8B--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>什么是提示工程？ 提示工程是设计和优化输入（提示）以指导生成式 AI 模型输出的过程。目标是创建清晰、简洁且能够引起 AI 所需响应的提示。 这在自然语言处理 （NLP） 等领域尤为重要，在这些领域中，输入的质量会显着影响生成内容的质量。 提示工程的类型 有几种类型的提示工程技术，每种技术都适用于不同的</description>
     </item>
     <item>
-      <title>6个AI高手都在用的提示词prompt网站，建议收藏！ - 知乎 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/6%E4%B8%AAAI%E9%AB%98%E6%89%8B%E9%83%BD%E5%9C%A8%E7%94%A8%E7%9A%84%E6%8F%90%E7%A4%BA%E8%AF%8Dprompt%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%AE%E6%94%B6%E8%97%8F-%E7%9F%A5%E4%B9%8E/</link>
-      <pubDate>Mon, 18 Mar 2024 14:50:20 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/6%E4%B8%AAAI%E9%AB%98%E6%89%8B%E9%83%BD%E5%9C%A8%E7%94%A8%E7%9A%84%E6%8F%90%E7%A4%BA%E8%AF%8Dprompt%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%AE%E6%94%B6%E8%97%8F-%E7%9F%A5%E4%B9%8E/</guid>
-      <description>你是不是在网上看各种AI教程时，发现别人的提示词总是很优质，得到的回复质量也更好。明明大家用的同一个工具，其他人就是比你优秀。其实站在巨人的肩膀上学习，会比一个人苦苦摸索效率来得更高更快。 以ChatGPT为例，回复内容的质量取决于提示词（即 Prompt）。如果你想得到高质量的回答</description>
+      <title>RACEF提示框架：提升人工智能交流效果 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/RACEF%E6%8F%90%E7%A4%BA%E6%A1%86%E6%9E%B6%E6%8F%90%E5%8D%87%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A4%E6%B5%81%E6%95%88%E6%9E%9C--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 15:06:22 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/RACEF%E6%8F%90%E7%A4%BA%E6%A1%86%E6%9E%B6%E6%8F%90%E5%8D%87%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A4%E6%B5%81%E6%95%88%E6%9E%9C--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>RACEF 提示框架 RACEF 代表 角色-操作-上下文-示例-格式 这是一种特定的写作格式，与我们的交流方式非常不同。它基于人工智能训练的数据，使其取得成功。 以下是有关如何使用此框架进行提示的一些原则。 具体而清晰：在提示中清楚地阐明您的请求。通过指定您要查找的信息类型来避免歧义。例如，不要问“告诉我有</description>
     </item>
     <item>
-      <title>Prompt：营销的雷神之锤_腾讯新闻 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/Prompt%E8%90%A5%E9%94%80%E7%9A%84%E9%9B%B7%E7%A5%9E%E4%B9%8B%E9%94%A4_%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB/</link>
-      <pubDate>Mon, 18 Mar 2024 14:49:20 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/Prompt%E8%90%A5%E9%94%80%E7%9A%84%E9%9B%B7%E7%A5%9E%E4%B9%8B%E9%94%A4_%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB/</guid>
-      <description>文 | 戴菁 广告让人既爱又恨。 当自己的朋友圈广告中出现梵克雅宝、劳斯莱斯、爱马仕时，买不买得起不重要，重要的是被「选中」，从而拥有跳入社交场、在评论区接力一场虚幻狂欢的资格。 但当担心失业的中年人刷到五星级养老社区的信息流推荐、月光族年轻人被「临湖别墅」或者「家长你好」开头的课程找上门</description>
+      <title>Prompt Engineering：UX设计师的研究与设计游戏规则改变者 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/Prompt-EngineeringUX%E8%AE%BE%E8%AE%A1%E5%B8%88%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99%E6%94%B9%E5%8F%98%E8%80%85--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 15:05:22 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/Prompt-EngineeringUX%E8%AE%BE%E8%AE%A1%E5%B8%88%E7%9A%84%E7%A0%94%E7%A9%B6%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99%E6%94%B9%E5%8F%98%E8%80%85--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>作为一名在错综复杂的研究和设计网络中导航的用户体验设计师，我们的旅程曾经充满挑战。他们花了无数个小时在无尽的信息海洋中筛选，拼命寻找那个难以捉摸的灵感。 每个项目都感觉像是一项艰巨的任务，每个转折点都有障碍，挫折感随着时间的流逝而增加——考虑到紧迫的期限和客户的压力。 但是，在这个物</description>
     </item>
     <item>
-      <title>OpenAI的官方Prompt工程指南详解 - 看这一篇真的就够了_腾讯新闻 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/OpenAI%E7%9A%84%E5%AE%98%E6%96%B9Prompt%E5%B7%A5%E7%A8%8B%E6%8C%87%E5%8D%97%E8%AF%A6%E8%A7%A3-%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E7%9C%9F%E7%9A%84%E5%B0%B1%E5%A4%9F%E4%BA%86_%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB/</link>
-      <pubDate>Mon, 18 Mar 2024 14:48:20 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/OpenAI%E7%9A%84%E5%AE%98%E6%96%B9Prompt%E5%B7%A5%E7%A8%8B%E6%8C%87%E5%8D%97%E8%AF%A6%E8%A7%A3-%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E7%9C%9F%E7%9A%84%E5%B0%B1%E5%A4%9F%E4%BA%86_%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB/</guid>
-      <description>其实一直有很多人问我，Prompt要怎么写效果才好，有没有模板。 我每次都会说，能清晰的表达你的想法，才是最重要的，各种技巧都是其次。但是，我还是希望发给他们一些靠谱的文档。 但是，网上各种所谓的Prompt框架、教程，真的乱七八糟，让人头都大。 直到前两天，12月15号，OpenAI</description>
+      <title>微调与即时工程：优化生成式人工智能模型的性能 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/%E5%BE%AE%E8%B0%83%E4%B8%8E%E5%8D%B3%E6%97%B6%E5%B7%A5%E7%A8%8B%E4%BC%98%E5%8C%96%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%80%A7%E8%83%BD--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 15:04:22 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/%E5%BE%AE%E8%B0%83%E4%B8%8E%E5%8D%B3%E6%97%B6%E5%B7%A5%E7%A8%8B%E4%BC%98%E5%8C%96%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%80%A7%E8%83%BD--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>GPT-4、PaLM 2、BARD……人工智能的进步一直在成倍增加。最重要的是，它们正变得可供所有人使用。 不仅仅是数据专家，还有商业领袖、营销经理，甚至是寻求帮助的学生。 然而，使用这些生成式人工智能解决方案并不是凭空发生的。这些解决方案的民主化表明了了解如何优化结果的重要性。 这就是</description>
     </item>
     <item>
-      <title>一篇文章让你成为prompt专家 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E8%AE%A9%E4%BD%A0%E6%88%90%E4%B8%BAprompt%E4%B8%93%E5%AE%B6-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</link>
-      <pubDate>Mon, 18 Mar 2024 14:47:20 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E8%AE%A9%E4%BD%A0%E6%88%90%E4%B8%BAprompt%E4%B8%93%E5%AE%B6-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</guid>
-      <description>用户在使用大模型产品的过程中，需要通过输入精准的prompt，来得到自己想要的答案。那么，在使用大模型的时候，我们要怎么写prompt，才可以更高效地获得想要的答案？这篇文章里，作者便做了梳理和总结，或许会对想了解大模型的同学有所启发。 前言 一直有在持续研究大语言模型，给身边的朋友</description>
-    </item>
-    <item>
-      <title>对话ChatGPT：Prompt是普通人“魔法”吗？ -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/prompt/%E5%AF%B9%E8%AF%9DChatGPTPrompt%E6%98%AF%E6%99%AE%E9%80%9A%E4%BA%BA%E9%AD%94%E6%B3%95%E5%90%97-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</link>
-      <pubDate>Mon, 18 Mar 2024 10:42:08 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/prompt/%E5%AF%B9%E8%AF%9DChatGPTPrompt%E6%98%AF%E6%99%AE%E9%80%9A%E4%BA%BA%E9%AD%94%E6%B3%95%E5%90%97-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</guid>
+      <title>Prompt的崛起与应用：AI时代的魔法指令 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/Prompt%E7%9A%84%E5%B4%9B%E8%B5%B7%E4%B8%8E%E5%BA%94%E7%94%A8AI%E6%97%B6%E4%BB%A3%E7%9A%84%E9%AD%94%E6%B3%95%E6%8C%87%E4%BB%A4--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 15:03:22 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/Prompt%E7%9A%84%E5%B4%9B%E8%B5%B7%E4%B8%8E%E5%BA%94%E7%94%A8AI%E6%97%B6%E4%BB%A3%E7%9A%84%E9%AD%94%E6%B3%95%E6%8C%87%E4%BB%A4--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
       <description>随着ChatGPT等AI应用模型、AI技术产品的出现，Prompt这个概念，也出现在了众人眼前，因为某种程度上，Prompt可以理解为控制AI的指令，可以在生成式AI的语境里发挥引导价值。具体如何解读Prompt的存在与应用？不如来看看本文的解读。 在ChatGPT、Midjour</description>
     </item>
     <item>
-      <title>解锁生成式AI：图解大型语言模型(LLM)项目生命周期 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/LLM/%E8%A7%A3%E9%94%81%E7%94%9F%E6%88%90%E5%BC%8FAI%E5%9B%BE%E8%A7%A3%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8BLLM%E9%A1%B9%E7%9B%AE%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</link>
-      <pubDate>Mon, 18 Mar 2024 10:41:08 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/LLM/%E8%A7%A3%E9%94%81%E7%94%9F%E6%88%90%E5%BC%8FAI%E5%9B%BE%E8%A7%A3%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8BLLM%E9%A1%B9%E7%9B%AE%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</guid>
-      <description>#精品长文创作季# 你是否对从何处开始着手你的大型语言模型(LLM)项目感到困惑？一切都从理解典型的LLM项目生命周期开始。作为生成式AI世界的一部分，LLMs在机器学习任务中带来了创新。 让我们来看看组成LLM项目生命周期的步骤及其对流程的影响。 理解LLM项目生命周期的路线图 在生成</description>
+      <title>儿童文学创作提示 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240325/prompt/%E5%84%BF%E7%AB%A5%E6%96%87%E5%AD%A6%E5%88%9B%E4%BD%9C%E6%8F%90%E7%A4%BA--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:19:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240325/prompt/%E5%84%BF%E7%AB%A5%E6%96%87%E5%AD%A6%E5%88%9B%E4%BD%9C%E6%8F%90%E7%A4%BA--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>背景：我没有孩子，但我有一个侄女，我有时会读书给她听。所以，我想你可以说我是儿童文学专家！ 1.集思广益书籍主题 扮演一位经验丰富的作家，创作了数百本儿童读物。你的任务是集思广益，为一本关于[主题]的书设计一个引人入胜且具有教育意义的主题。 该主题不仅应该具有吸引力并且适合儿童，还应该</description>
     </item>
     <item>
-      <title>知道创宇率先推出人工智能大语言模型（LLM）防护方案！ -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/LLM/%E7%9F%A5%E9%81%93%E5%88%9B%E5%AE%87%E7%8E%87%E5%85%88%E6%8E%A8%E5%87%BA%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8BLLM%E9%98%B2%E6%8A%A4%E6%96%B9%E6%A1%88-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</link>
-      <pubDate>Mon, 18 Mar 2024 10:40:08 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/LLM/%E7%9F%A5%E9%81%93%E5%88%9B%E5%AE%87%E7%8E%87%E5%85%88%E6%8E%A8%E5%87%BA%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8BLLM%E9%98%B2%E6%8A%A4%E6%96%B9%E6%A1%88-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</guid>
-      <description>什么是 LLM？ LLM 是 Large Language Model 的简称，中文名是大语言模型，是一种基于海量文本数据训练的深度学习模型（人工智能模型）。 LLM 发展至今，其参数量已经达到万亿规模。 LLM 应用场景？ LLM 常见应用及部署场景： 1 私有 LLM 私有 LLM 应用场景一般是私有化部署，给公司内部员工使用，聚焦垂直领域，训练数据涵盖公司特有数据</description>
+      <title>即时工程：2024年关键技能与薪资前景 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240325/prompt/%E5%8D%B3%E6%97%B6%E5%B7%A5%E7%A8%8B2024%E5%B9%B4%E5%85%B3%E9%94%AE%E6%8A%80%E8%83%BD%E4%B8%8E%E8%96%AA%E8%B5%84%E5%89%8D%E6%99%AF--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:18:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240325/prompt/%E5%8D%B3%E6%97%B6%E5%B7%A5%E7%A8%8B2024%E5%B9%B4%E5%85%B3%E9%94%AE%E6%8A%80%E8%83%BD%E4%B8%8E%E8%96%AA%E8%B5%84%E5%89%8D%E6%99%AF--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>什么是即时工程？ 从本质上讲，即时工程是一种旨在与复杂的计算模型（特别是由机器学习和自然语言处理技术驱动的计算模型）进行有效通信的方法。 这个新兴领域是算法开发和优化不可或缺的一部分，这些算法以有意义的方式解释和响应人类输入。 通过精心设计提示或输入查询，工程师可以引导这些模型产生特定</description>
     </item>
     <item>
-      <title>理解大语言模型 LLM：定义与发展历程 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/LLM/%E7%90%86%E8%A7%A3%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B-LLM%E5%AE%9A%E4%B9%89%E4%B8%8E%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</link>
-      <pubDate>Mon, 18 Mar 2024 10:39:08 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/LLM/%E7%90%86%E8%A7%A3%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B-LLM%E5%AE%9A%E4%B9%89%E4%B8%8E%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</guid>
-      <description>在当今的科技领域，大型语言模型（LLM）正成为人们关注的焦点。这些模型具有令人惊叹的语言处理能力，为自然语言处理（NLP）带来了巨大的变革。本文将深入探讨 LLM 的定义、核心特点以及它的发展历史，帮助读者全面了解这一重要的技术领域。 一、LLM 的定义 LLM 是一种基于深度学习技术的语言模型，它</description>
+      <title>如何用 AIGC 做好从原型到 UI？实战案例来了！ -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240325/AGI/%E5%A6%82%E4%BD%95%E7%94%A8-AIGC-%E5%81%9A%E5%A5%BD%E4%BB%8E%E5%8E%9F%E5%9E%8B%E5%88%B0-UI%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E6%9D%A5%E4%BA%86--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:12:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240325/AGI/%E5%A6%82%E4%BD%95%E7%94%A8-AIGC-%E5%81%9A%E5%A5%BD%E4%BB%8E%E5%8E%9F%E5%9E%8B%E5%88%B0-UI%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E6%9D%A5%E4%BA%86--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>如何用 AIGC 做好从原型到 UI？实战案例来了！ 我们的行业不尊重传统，只尊重创新。 “AI 到底会不会取代我们”？这个问题我们留在结尾与大家探讨，现在我就开始学习如何用AIGC去做界面、以及怎样指导我们进行优化。 利用“AI”做界面主要会用到四个工具：Chat GPT、Figma（Wirefra</description>
     </item>
     <item>
-      <title>技术科普｜什么是LLM（大语言模型）？ -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/LLM/%E6%8A%80%E6%9C%AF%E7%A7%91%E6%99%AE%E4%BB%80%E4%B9%88%E6%98%AFLLM%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</link>
-      <pubDate>Mon, 18 Mar 2024 10:38:08 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/LLM/%E6%8A%80%E6%9C%AF%E7%A7%91%E6%99%AE%E4%BB%80%E4%B9%88%E6%98%AFLLM%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</guid>
-      <description>近年来人工智能（AI）领域经历了巨大的增长，而自然语言处理（NLP）更是其中一个取得快速进展的领域。NLP中最重要的发展便是大语言模型（LLM）。 大语言模型的定义及核心 大语言模型（英文：Large Language Model，缩写LLM），也称大型语言模型，是一种基于机器学习和自然语言处理技术的</description>
+      <title>AI创业的77个方向 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240325/AGI/AI%E5%88%9B%E4%B8%9A%E7%9A%8477%E4%B8%AA%E6%96%B9%E5%90%91--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:11:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240325/AGI/AI%E5%88%9B%E4%B8%9A%E7%9A%8477%E4%B8%AA%E6%96%B9%E5%90%91--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>AI创业的77个方向 人工智能系统可以分析大量数据、识别模式并根据处理的信息做出预测或建议。对于创业来说，人工智能可以在多个方面带来巨大的好处。人工智能有潜力彻底改变创业精神，使初创企业能够在不断变化的市场环境中更高效地运营、更有效地创新并更好地满足客户的需求。 以下是77种利用AI</description>
     </item>
     <item>
-      <title>技术分享 - 基于大模型（LLM）的智能化自助分析系统搭建探索 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/LLM/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB-%E5%9F%BA%E4%BA%8E%E5%A4%A7%E6%A8%A1%E5%9E%8BLLM%E7%9A%84%E6%99%BA%E8%83%BD%E5%8C%96%E8%87%AA%E5%8A%A9%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA%E6%8E%A2%E7%B4%A2-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</link>
-      <pubDate>Mon, 18 Mar 2024 10:37:08 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/LLM/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB-%E5%9F%BA%E4%BA%8E%E5%A4%A7%E6%A8%A1%E5%9E%8BLLM%E7%9A%84%E6%99%BA%E8%83%BD%E5%8C%96%E8%87%AA%E5%8A%A9%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA%E6%8E%A2%E7%B4%A2-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</guid>
-      <description>研究背景： 随着人工智能的快速发展，大型语言模型（LLM）已经在各种场景中展现了惊人的应用价值，从自然语言处理到复杂的数据分析，LLM似乎正在不断改变我们获取和处理信息的方式。 然而，如何有效地利用这些模型，以及如何根据特定的应用需求进行选型和配置，仍然是许多研究者和开发者面临的挑战</description>
+      <title>什么是AGI？人工智能的未来 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240325/AGI/%E4%BB%80%E4%B9%88%E6%98%AFAGI%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%AA%E6%9D%A5--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:10:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240325/AGI/%E4%BB%80%E4%B9%88%E6%98%AFAGI%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E6%9C%AA%E6%9D%A5--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>什么是AGI？人工智能的未来 1 AGI概念&amp;amp;背景 1.1 AI（Artificial Intelligence）简史 最初在1955年，由**约翰·麦卡锡（John McCarthy）创造的术语【人工智能】（Artificial Intelligence）**指的是能够像人类一样思考、学习</description>
     </item>
     <item>
-      <title>微软6页论文爆火：三进制LLM，真香！ -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/LLM/%E5%BE%AE%E8%BD%AF6%E9%A1%B5%E8%AE%BA%E6%96%87%E7%88%86%E7%81%AB%E4%B8%89%E8%BF%9B%E5%88%B6LLM%E7%9C%9F%E9%A6%99-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</link>
-      <pubDate>Mon, 18 Mar 2024 10:36:08 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/LLM/%E5%BE%AE%E8%BD%AF6%E9%A1%B5%E8%AE%BA%E6%96%87%E7%88%86%E7%81%AB%E4%B8%89%E8%BF%9B%E5%88%B6LLM%E7%9C%9F%E9%A6%99-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</guid>
-      <description>金磊 发自 凹非寺 量子位 | 公众号 QbitAI 现在，大语言模型（LLM）迎来了“1-bit时代”。 这就是由微软和中国科学院大学在最新一项研究中所提出的结论—— 所有的LLM，都将是1.58 bit的。 具体而言，这项研究提出的方法叫做BitNet b1.58，可以说是从大语言模型“根儿”上的参数下手。 将</description>
+      <title>ChatGPT中的Prompt工程技术与应用 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240325/prompt/ChatGPT%E4%B8%AD%E7%9A%84Prompt%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:09:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240325/prompt/ChatGPT%E4%B8%AD%E7%9A%84Prompt%E5%B7%A5%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>详细介绍了ChatGPT中的提示工程技术，包括指令提示、角色提示、标准提示、零样本提示、少样本提示、自洽提示、种子词提示、知识生成提示、知识整合提示、多项选择提示、可解释的软提示、控制生成提示、问答提示、概述提示、对话提示、对抗性提示、聚类提示、强化学习提示、课程学习提示、情感分</description>
     </item>
     <item>
-      <title>大型语言模型 (LLM) -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/LLM/%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B-LLM-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</link>
-      <pubDate>Mon, 18 Mar 2024 10:35:08 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/LLM/%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B-LLM-%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/</guid>
-      <description>大型语言模型 (LLM) 代表了人工智能在处理和生成人类语言方面的最前沿。这些数字巨人是先进机器学习技术和庞大数据集的产物，旨在以反映人类认知的方式理解、解释和生成语言。LLM的能力已将其从单纯的技术新颖性转变为重塑行业、提高生产力和弥合全球沟通差距的不可或缺的工具。LLM的发展过程士的旅程</description>
+      <title>提示工程的重要性与职业前景 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7%E4%B8%8E%E8%81%8C%E4%B8%9A%E5%89%8D%E6%99%AF--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:06:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7%E4%B8%8E%E8%81%8C%E4%B8%9A%E5%89%8D%E6%99%AF--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>什么是提示工程？ 从本质上讲，提示工程是一种旨在与复杂的计算模型进行有效通信的方法，尤其是那些由机器学习和自然语言处理技术驱动的模型。 这个新兴领域对于以有意义的方式解释和响应人类输入的算法的开发和优化是不可或缺的。 通过精心制作提示或输入查询，工程师可以引导这些模型产生特定的、期望的</description>
     </item>
     <item>
-      <title>史上最大开源LLM，参数高达3140亿，马斯克如约开源Grok，10小时狂揽10000颗Star-36氪 -- 知识铺</title>
-      <link>http://localhost:1313/post/202403/LLM/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E5%BC%80%E6%BA%90LLM%E5%8F%82%E6%95%B0%E9%AB%98%E8%BE%BE3140%E4%BA%BF%E9%A9%AC%E6%96%AF%E5%85%8B%E5%A6%82%E7%BA%A6%E5%BC%80%E6%BA%90Grok10%E5%B0%8F%E6%97%B6%E7%8B%82%E6%8F%BD10000%E9%A2%97Star-36%E6%B0%AA/</link>
-      <pubDate>Mon, 18 Mar 2024 10:34:08 +0000</pubDate>
-      <guid>http://localhost:1313/post/202403/LLM/%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E5%BC%80%E6%BA%90LLM%E5%8F%82%E6%95%B0%E9%AB%98%E8%BE%BE3140%E4%BA%BF%E9%A9%AC%E6%96%AF%E5%85%8B%E5%A6%82%E7%BA%A6%E5%BC%80%E6%BA%90Grok10%E5%B0%8F%E6%97%B6%E7%8B%82%E6%8F%BD10000%E9%A2%97Star-36%E6%B0%AA/</guid>
-      <description>气「OpenAI 不 Open」以至于对其发起诉讼之后，马斯克践行自己自由、开放的原则，在刚刚过去的周末里选择重磅开源自家的 AI 大模型——Grok-1（https://github.com/xai-org/grok-1）。 距离 Grok-1 开源仅过去了 10 个小时，该项目便获得了 10k 的 Star，成为众人</description>
+      <title>雇用GPT提示工程师来优化AI项目 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/%E9%9B%87%E7%94%A8GPT%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%9D%A5%E4%BC%98%E5%8C%96AI%E9%A1%B9%E7%9B%AE--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:04:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/%E9%9B%87%E7%94%A8GPT%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%9D%A5%E4%BC%98%E5%8C%96AI%E9%A1%B9%E7%9B%AE--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>我们都曾因人工智能给出的错误、不准确或直接捏造的答案而苦苦挣扎。咒骂人工智能或刷新响应提要不会阻止你拔头发。 优化响应的最佳解决方案是由专业的 GPT 提示工程师团队组成。 这些工程师知道如何从您的人工智能项目中获得最佳结果，并每次都会为您提供一组提示来帮助您的业务用例。 雇用熟练的专业人员可</description>
     </item>
     <item>
-      <title>人工智能初创公司如何筹集数百万美元</title>
-      <link>http://localhost:1313/post/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%E5%A6%82%E4%BD%95%E7%AD%B9%E9%9B%86%E6%95%B0%E7%99%BE%E4%B8%87%E7%BE%8E%E5%85%83/</link>
-      <pubDate>Mon, 11 Mar 2024 09:23:01 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%E5%A6%82%E4%BD%95%E7%AD%B9%E9%9B%86%E6%95%B0%E7%99%BE%E4%B8%87%E7%BE%8E%E5%85%83/</guid>
-      <description>重制 构建图形设计的基础模型+工具 A系列 $12,000,000.00 1X 1X 设计和开发人形机器人以满足全球劳动力需求的人工智能和机器人公司。 B系列 $100,000,000.00 火星人 火星人 帮助开发人员将任务路由到不同的大型语言模型。 种子 $9,000,000.00 莱昂纳多·艾 莱昂纳多·艾 Leonardo AI 是一个用于内容创建的生成式 AI 平台，提供 Alchemy Refiner 和图像生成器应用程序等功能。 A系</description>
+      <title>Stability AI 推出 Stable Video 3D：新一代AI视频工具助力3D视频渲染 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/Stability-AI-%E6%8E%A8%E5%87%BA-Stable-Video-3D%E6%96%B0%E4%B8%80%E4%BB%A3AI%E8%A7%86%E9%A2%91%E5%B7%A5%E5%85%B7%E5%8A%A9%E5%8A%9B3D%E8%A7%86%E9%A2%91%E6%B8%B2%E6%9F%93--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:03:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/Stability-AI-%E6%8E%A8%E5%87%BA-Stable-Video-3D%E6%96%B0%E4%B8%80%E4%BB%A3AI%E8%A7%86%E9%A2%91%E5%B7%A5%E5%85%B7%E5%8A%A9%E5%8A%9B3D%E8%A7%86%E9%A2%91%E6%B8%B2%E6%9F%93--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>2024 年 3 月 18 日 下午 5:22 ======= 2e020592566c86038ed0487543d0a978e947b16f 图片来源：VentureBeat 使用 Stable Diffusion XL 制作 3 月 27 日与波士顿的领导人一起度过一个独特的社交之夜、见解和对话。在此请求邀请。 随着 Stable Video 3D (SV3D) 的发布，Stability AI 今天正在扩大其生成式 AI 模型组合。 顾名思义，新模型是一款用于渲染 3D 视频的新一代 AI 视频工具。 Stability AI 一</description>
     </item>
     <item>
-      <title>001 值得你花时间阅读的 5 个 freeCodeCamp 资源</title>
-      <link>http://localhost:1313/post/202311/001-%E5%80%BC%E5%BE%97%E4%BD%A0%E8%8A%B1%E6%97%B6%E9%97%B4%E9%98%85%E8%AF%BB%E7%9A%84-5-%E4%B8%AA-freeCodeCamp-%E8%B5%84%E6%BA%90/</link>
-      <pubDate>Fri, 24 Nov 2023 09:31:33 +0800</pubDate>
-      <guid>http://localhost:1313/post/202311/001-%E5%80%BC%E5%BE%97%E4%BD%A0%E8%8A%B1%E6%97%B6%E9%97%B4%E9%98%85%E8%AF%BB%E7%9A%84-5-%E4%B8%AA-freeCodeCamp-%E8%B5%84%E6%BA%90/</guid>
-      <description>了解如何使用机器学习构建 AI。这门新的中级课程假设您具备一些统计学和 Python 的基本知识。您将学习如何使用强大的 scikit-learn 库来实现线性回归、逻辑回归、决策树、随机森林、梯度提升机和其他 AI 构建块。这是一门严肃的课程，具有你对 freeCodeCamp 工程社区所期望的所有严谨性。我不怪任何人想在这个感恩节周末放松一下。但是</description>
+      <title>生成式AI重构广告营销业：让数据飞轮转动起来 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/%E7%94%9F%E6%88%90%E5%BC%8FAI%E9%87%8D%E6%9E%84%E5%B9%BF%E5%91%8A%E8%90%A5%E9%94%80%E4%B8%9A%E8%AE%A9%E6%95%B0%E6%8D%AE%E9%A3%9E%E8%BD%AE%E8%BD%AC%E5%8A%A8%E8%B5%B7%E6%9D%A5--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:02:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/%E7%94%9F%E6%88%90%E5%BC%8FAI%E9%87%8D%E6%9E%84%E5%B9%BF%E5%91%8A%E8%90%A5%E9%94%80%E4%B8%9A%E8%AE%A9%E6%95%B0%E6%8D%AE%E9%A3%9E%E8%BD%AE%E8%BD%AC%E5%8A%A8%E8%B5%B7%E6%9D%A5--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>文 | 戴菁 广告让人既爱又恨。 当自己的朋友圈广告中出现梵克雅宝、劳斯莱斯、爱马仕时，买不买得起不重要，重要的是被「选中」，从而拥有跳入社交场、在评论区接力一场虚幻狂欢的资格。 但当担心失业的中年人刷到五星级养老社区的信息流推荐、月光族年轻人被「临湖别墅」或者「家长你好」开头的课程找上门</description>
     </item>
     <item>
-      <title>005 排名前 23的 llm</title>
-      <link>http://localhost:1313/post/202309/005-%E6%8E%92%E5%90%8D%E5%89%8D-23%E7%9A%84-llm/</link>
-      <pubDate>Mon, 04 Sep 2023 09:31:33 +0800</pubDate>
-      <guid>http://localhost:1313/post/202309/005-%E6%8E%92%E5%90%8D%E5%89%8D-23%E7%9A%84-llm/</guid>
-      <description>MetaGPT 27 24,728 8.7 Python 🌟 多代理框架：给定一行需求，返回 PRD、Design、Tasks、Repo **项目提及：**MetaGPT：自动化整个公司 | /r/ChatGPT | 2023年08月14日 想象一下，有一个人工智能可以做产品经理、建筑师、项目经理和工程师能做的事情。这就是MetaGPT。 unilm 24 15,142 0.0 Python 跨任务、语言</description>
+      <title>OpenAI发布Prompt Engineering指南，提升与大模型协作效果 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/OpenAI%E5%8F%91%E5%B8%83Prompt-Engineering%E6%8C%87%E5%8D%97%E6%8F%90%E5%8D%87%E4%B8%8E%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8D%8F%E4%BD%9C%E6%95%88%E6%9E%9C--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:01:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/OpenAI%E5%8F%91%E5%B8%83Prompt-Engineering%E6%8C%87%E5%8D%97%E6%8F%90%E5%8D%87%E4%B8%8E%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8D%8F%E4%BD%9C%E6%95%88%E6%9E%9C--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>其实一直有很多人问我，Prompt要怎么写效果才好，有没有模板。 我每次都会说，能清晰的表达你的想法，才是最重要的，各种技巧都是其次。但是，我还是希望发给他们一些靠谱的文档。 但是，网上各种所谓的Prompt框架、教程，真的乱七八糟，让人头都大。 直到前两天，12月15号，OpenAI</description>
     </item>
     <item>
-      <title>004 通过这个提示，成为上帝般的提示工程师</title>
-      <link>http://localhost:1313/post/202309/004-%E9%80%9A%E8%BF%87%E8%BF%99%E4%B8%AA%E6%8F%90%E7%A4%BA%E6%88%90%E4%B8%BA%E4%B8%8A%E5%B8%9D%E8%88%AC%E7%9A%84%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E5%B8%88/</link>
-      <pubDate>Sun, 03 Sep 2023 09:31:33 +0800</pubDate>
-      <guid>http://localhost:1313/post/202309/004-%E9%80%9A%E8%BF%87%E8%BF%99%E4%B8%AA%E6%8F%90%E7%A4%BA%E6%88%90%E4%B8%BA%E4%B8%8A%E5%B8%9D%E8%88%AC%E7%9A%84%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B%E5%B8%88/</guid>
-      <description>您可以将 ChatGPT 变成专业的提示工程师，帮助您构建复杂的提示。 这是您可以复制和粘贴的提示。 I want you to become my Expert Prompt Creator. Your goal is to help me craft the best possible prompt for my needs. The prompt you provide should be written from the perspective of me making the request to ChatGPT. Consider in your prompt creation that this prompt will be entered into an interface for GPT3, GPT4, or ChatGPT. The prompt will include instructions to write the output using my communication style. The process is as follows: 1. You will generate the following sections: &amp;#34; **Prompt:** &amp;gt;{provide the best possible prompt according to my request} &amp;gt; &amp;gt; &amp;gt;{summarize my</description>
+      <title>在90天内使用秘密ChatGPT提示获得10万Instagram粉丝的指南 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/%E5%9C%A890%E5%A4%A9%E5%86%85%E4%BD%BF%E7%94%A8%E7%A7%98%E5%AF%86ChatGPT%E6%8F%90%E7%A4%BA%E8%8E%B7%E5%BE%9710%E4%B8%87Instagram%E7%B2%89%E4%B8%9D%E7%9A%84%E6%8C%87%E5%8D%97--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 10:00:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/%E5%9C%A890%E5%A4%A9%E5%86%85%E4%BD%BF%E7%94%A8%E7%A7%98%E5%AF%86ChatGPT%E6%8F%90%E7%A4%BA%E8%8E%B7%E5%BE%9710%E4%B8%87Instagram%E7%B2%89%E4%B8%9D%E7%9A%84%E6%8C%87%E5%8D%97--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>人工智能可以帮助你击败 Instagram 算法并避免你的内容被埋没。 本指南将帮助您发展 Instagram 帐户并发现秘密的 chatgpt 提示，从而在 90 天内获得 10 万粉丝。 这些提示涵盖了内容创作者发展 Instagram 帐户的 7 个基本 KPI。 保存起来以供将来参考📌 指数 提示输入 Instagram Bio 提示 Instagram Hooks Instagram 内容提示 提示输入 Instagram CTA 提示输入 Instagram 标题 提示输入 Instagram 关键字 提示输入 Instagram</description>
     </item>
     <item>
-      <title>003 爬1000多条Prompt，总结10条写prompt技能</title>
-      <link>http://localhost:1313/post/202309/003-%E7%88%AC.1000%E5%A4%9A%E6%9D%A1Prompt%E6%80%BB%E7%BB%9310%E6%9D%A1%E5%86%99prompt%E6%8A%80%E8%83%BD/</link>
-      <pubDate>Sun, 03 Sep 2023 09:30:33 +0800</pubDate>
-      <guid>http://localhost:1313/post/202309/003-%E7%88%AC.1000%E5%A4%9A%E6%9D%A1Prompt%E6%80%BB%E7%BB%9310%E6%9D%A1%E5%86%99prompt%E6%8A%80%E8%83%BD/</guid>
-      <description>添加具体的描述性说明（带有备忘单） 定义输出格式 举几个例子 整合“不知道”/“不会回答”的案例（控制幻觉/关键话题） 使用思维链推理 使用提示模板，而不是静态提示 添加数据上下文 包括对话历史记录 设置提示格式：在提示中使用清晰的标题标签和分隔符 综合起来：专业提示的剖析（附备忘单） 1) 添加具体的</description>
-    </item>
-    <item>
-      <title>002 Prompt工程：它是什么以及有效 AI Prompt &#43; Prompt的 15 种技术</title>
-      <link>http://localhost:1313/post/202309/002-Prompt%E5%B7%A5%E7%A8%8B%E5%AE%83%E6%98%AF%E4%BB%80%E4%B9%88%E4%BB%A5%E5%8F%8A%E6%9C%89%E6%95%88-AI-Prompt-&#43;-Prompt%E7%9A%84-15-%E7%A7%8D%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Sun, 03 Sep 2023 09:29:33 +0800</pubDate>
-      <guid>http://localhost:1313/post/202309/002-Prompt%E5%B7%A5%E7%A8%8B%E5%AE%83%E6%98%AF%E4%BB%80%E4%B9%88%E4%BB%A5%E5%8F%8A%E6%9C%89%E6%95%88-AI-Prompt-&#43;-Prompt%E7%9A%84-15-%E7%A7%8D%E6%8A%80%E6%9C%AF/</guid>
-      <description>什么是快速工程？ 提示工程是指创建精确有效的提示，以从大型语言模型 （LLM） 获取上下文驱动的 AI 输出。它需要自然语言处理和LLM功能方面的专业知识。 提示工程师必须构建清晰且特定于上下文的问题和陈述，从 AI 模型中引出最相关和最准确的响应。 无论是生成详细的营销报告、创建引人入胜的网站内容，</description>
-    </item>
-    <item>
-      <title>001 五步写一个完美的Prompt</title>
-      <link>http://localhost:1313/post/202309/001-%E4%BA%94%E6%AD%A5%E5%86%99%E4%B8%80%E4%B8%AA%E5%AE%8C%E7%BE%8E%E7%9A%84prompt/</link>
-      <pubDate>Sun, 03 Sep 2023 09:29:32 +0800</pubDate>
-      <guid>http://localhost:1313/post/202309/001-%E4%BA%94%E6%AD%A5%E5%86%99%E4%B8%80%E4%B8%AA%E5%AE%8C%E7%BE%8E%E7%9A%84prompt/</guid>
-      <description>\1. 描述要具体 (prompt) 提示 A：”为我写一篇关于全球变暖的文章。不要太长。 提示B：“用200-300字写一篇关于全球变暖的中等文章。 &amp;ndash; ok 步骤 1：定义主题 首先，明确你的主题，即全球变暖。确定你要强调或讨论的关键要点，以确保文章内容紧凑而有针对性。 步骤 2：确定文章结构 在开始写作之前，考虑文章的</description>
-    </item>
-    <item>
-      <title>适用于每种工作流程的 150 个最佳 ChatGPT 提示</title>
-      <link>http://localhost:1313/post/%E9%80%82%E7%94%A8%E4%BA%8E%E6%AF%8F%E7%A7%8D%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E7%9A%84-150-%E4%B8%AA%E6%9C%80%E4%BD%B3-ChatGPT-%E6%8F%90%E7%A4%BA/</link>
-      <pubDate>Sun, 03 Sep 2023 09:29:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E9%80%82%E7%94%A8%E4%BA%8E%E6%AF%8F%E7%A7%8D%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E7%9A%84-150-%E4%B8%AA%E6%9C%80%E4%BD%B3-ChatGPT-%E6%8F%90%E7%A4%BA/</guid>
-      <description>ChatGPT 提示是有用的命令，您可以将其提供给 ChatGPT，无论问题或提示是什么，它都会为您提供最佳答案。我们已经尝试了ChatGPT与不同的工作流程，如商业，研究，写诗，博客等。 让我们首先向您介绍 ChatGPT，以防您在新闻中的某个地方听说过它但对此一无所知。 什么是ChatGPT（简单</description>
-    </item>
-    <item>
-      <title>1500&#43;AI工具网站，部分依赖ChatGPT</title>
-      <link>http://localhost:1313/post/1500&#43;AI%E5%B7%A5%E5%85%B7%E7%BD%91%E7%AB%99%E9%83%A8%E5%88%86%E4%BE%9D%E8%B5%96ChatGPT/</link>
-      <pubDate>Mon, 17 Apr 2023 09:29:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/1500&#43;AI%E5%B7%A5%E5%85%B7%E7%BD%91%E7%AB%99%E9%83%A8%E5%88%86%E4%BE%9D%E8%B5%96ChatGPT/</guid>
-      <description>2013-04-17 2AI - 为各行各业提供人工智能解决方案的平台，包括图像处理、自然语言处理和数据分析。 内容生成器 - 一种土耳其内容生成工具，它使用 AI 为网站和博客创建独特且对 SEO 友好的文章。 Glass - 一个数字健康平台，致力于通过个性化体验和数据驱动的见解来改善心理健康和福祉。 GPTAgent - 一个基于人工智能的平台，为企业提</description>
-    </item>
-    <item>
-      <title>使用 Chatgpt 构建您的自定义聊天机器人</title>
-      <link>http://localhost:1313/post/%E4%BD%BF%E7%94%A8-chatgpt-%E6%9E%84%E5%BB%BA%E6%82%A8%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
-      <pubDate>Mon, 27 Mar 2023 09:29:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E4%BD%BF%E7%94%A8-chatgpt-%E6%9E%84%E5%BB%BA%E6%82%A8%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
-      <description>ChatGPT是有史以来最强大的语言模型。这是一个了不起的工具，可以以各种方式使用来提高您的生产力和学习能力。ChatGPT 可以支持快速回答琐碎的问题或对复杂概念的深入解释。ChatGPT 在短短几周内就成为一种趋势 AI 工具。根据Similarweb的数据，它在去年100月达到了&amp;l</description>
-    </item>
-    <item>
-      <title>ChatGPT刚刚从一个工具变成了一个平台</title>
-      <link>http://localhost:1313/post/ChatGPT%E5%88%9A%E5%88%9A%E4%BB%8E%E4%B8%80%E4%B8%AA%E5%B7%A5%E5%85%B7%E5%8F%98%E6%88%90%E4%BA%86%E4%B8%80%E4%B8%AA%E5%B9%B3%E5%8F%B0/</link>
-      <pubDate>Mon, 27 Mar 2023 09:19:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/ChatGPT%E5%88%9A%E5%88%9A%E4%BB%8E%E4%B8%80%E4%B8%AA%E5%B7%A5%E5%85%B7%E5%8F%98%E6%88%90%E4%BA%86%E4%B8%80%E4%B8%AA%E5%B9%B3%E5%8F%B0/</guid>
-      <description>聊天GPT刚刚进化！好吧，不是以“我变得有知觉！”的方式，而是“我已经从一个勉强成为一个工具，变成了一个平台！”的方式。我们每天都听到世界上关于人工智能的新消息。它突然处于软件开发和技术领域的最前沿。从微软在其所有办公产品中引入副驾驶几乎紧随其后，谷歌对其文档做了同样的事情，人工</description>
-    </item>
-    <item>
-      <title>终极数据科学家备忘单</title>
-      <link>http://localhost:1313/post/%E7%BB%88%E6%9E%81%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%A4%87%E5%BF%98%E5%8D%95/</link>
-      <pubDate>Sun, 26 Mar 2023 09:39:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E7%BB%88%E6%9E%81%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%A4%87%E5%BF%98%E5%8D%95/</guid>
-      <description>有抱负或专业的数据科学家，你非常了解大量的SQL命令，算法，Excel函数和谷歌搜索进入你的工作。虽然您每天使用的那些都致力于内存，但有时您可能需要跳入需要新工具或所选编程语言的不同应用程序的项目。 输入：数据科学备忘单的终极汇编。这是您的首选资源，可让您在一个地方查看最常见的公式</description>
-    </item>
-    <item>
-      <title>数据科学和机器学习：自学路线图</title>
-      <link>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%92%8C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%87%AA%E5%AD%A6%E8%B7%AF%E7%BA%BF%E5%9B%BE/</link>
-      <pubDate>Sun, 26 Mar 2023 09:29:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%92%8C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%87%AA%E5%AD%A6%E8%B7%AF%E7%BA%BF%E5%9B%BE/</guid>
-      <description>“没有数据是干净的，但大多数都是有用的。- 迪恩·阿博特 欢迎来到数据科学和机器学习的世界！这些令人兴奋的领域正在改变全球的行业，现在是潜入和开始学习的最佳时机。 但是你从哪里开始呢？有这么多资源和技术可供选择，知道将精力集中在何处可能会让人不知所措。 这就是为什么我们创建了这个自学路线</description>
-    </item>
-    <item>
-      <title>什么是 ChatGPT 插件？如何构建自己的插件</title>
-      <link>http://localhost:1313/post/%E4%BB%80%E4%B9%88%E6%98%AF-ChatGPT-%E6%8F%92%E4%BB%B6%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%8F%92%E4%BB%B6/</link>
-      <pubDate>Sun, 26 Mar 2023 09:19:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E4%BB%80%E4%B9%88%E6%98%AF-ChatGPT-%E6%8F%92%E4%BB%B6%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%8F%92%E4%BB%B6/</guid>
-      <description>OpenAI刚刚宣布了他们在ChatGPT中的新功能。这是迄今为止ChatGPT最令人兴奋的功能。ChatGPT 根据截至 2021 年的数据进行训练，它只能根据该数据提供结果。现在为了与实时数据交互，OpenAI引入了ChatGPT插件。 介绍 插件是专门为语言模型设计的工具，以安全为核心原则</description>
-    </item>
-    <item>
-      <title>通过 ChatGPT-4 赚钱：5 个有利可图的探索机会</title>
-      <link>http://localhost:1313/post/%E9%80%9A%E8%BF%87-ChatGPT-4-%E8%B5%9A%E9%92%B15-%E4%B8%AA%E6%9C%89%E5%88%A9%E5%8F%AF%E5%9B%BE%E7%9A%84%E6%8E%A2%E7%B4%A2%E6%9C%BA%E4%BC%9A/</link>
-      <pubDate>Sun, 26 Mar 2023 09:09:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E9%80%9A%E8%BF%87-ChatGPT-4-%E8%B5%9A%E9%92%B15-%E4%B8%AA%E6%9C%89%E5%88%A9%E5%8F%AF%E5%9B%BE%E7%9A%84%E6%8E%A2%E7%B4%A2%E6%9C%BA%E4%BC%9A/</guid>
-      <description>ChatGPT是由OpenAI开发的强大语言模型，它改变了我们与计算机交互的方式。凭借其自然语言处理能力，ChatGPT 可以理解人类语言并生成与人类无法区分的智能响应。虽然 ChatGPT 在聊天机器人和客户服务自动化方面越来越受欢迎，但还有许多其他方法可以利用这项技术来创建有利可图的企业。本文</description>
-    </item>
-    <item>
-      <title>使用 ChatGPT-4 增强您的写作能力：内容协作终极指南</title>
-      <link>http://localhost:1313/post/%E4%BD%BF%E7%94%A8-ChatGPT-4-%E5%A2%9E%E5%BC%BA%E6%82%A8%E7%9A%84%E5%86%99%E4%BD%9C%E8%83%BD%E5%8A%9B%E5%86%85%E5%AE%B9%E5%8D%8F%E4%BD%9C%E7%BB%88%E6%9E%81%E6%8C%87%E5%8D%97/</link>
-      <pubDate>Sun, 26 Mar 2023 09:08:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E4%BD%BF%E7%94%A8-ChatGPT-4-%E5%A2%9E%E5%BC%BA%E6%82%A8%E7%9A%84%E5%86%99%E4%BD%9C%E8%83%BD%E5%8A%9B%E5%86%85%E5%AE%B9%E5%8D%8F%E4%BD%9C%E7%BB%88%E6%9E%81%E6%8C%87%E5%8D%97/</guid>
-      <description>利用 AI 提升您的内容创建并通过 ChatGPT 中的快速工程提高您的媒体可见性 — 案例研究 是时候在您的写作过程中释放 ChatGPT-4 的全部潜力了。在本综合指南中，我们将探讨增强型 Human-ChatGPT 内容制作流程，并向您展示如何最大限度地提高内容的影响力和 SEO 以覆盖更广泛的受众。按照这些易于理解的步骤和具体示例进行操作，使您与 ChatGPT-4 的协作</description>
-    </item>
-    <item>
-      <title>使用 ChatGPT 关键字作为写作提示，以提高清晰度和重点</title>
-      <link>http://localhost:1313/post/%E4%BD%BF%E7%94%A8-ChatGPT-%E5%85%B3%E9%94%AE%E5%AD%97%E4%BD%9C%E4%B8%BA%E5%86%99%E4%BD%9C%E6%8F%90%E7%A4%BA%E4%BB%A5%E6%8F%90%E9%AB%98%E6%B8%85%E6%99%B0%E5%BA%A6%E5%92%8C%E9%87%8D%E7%82%B9/</link>
-      <pubDate>Sun, 26 Mar 2023 09:07:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E4%BD%BF%E7%94%A8-ChatGPT-%E5%85%B3%E9%94%AE%E5%AD%97%E4%BD%9C%E4%B8%BA%E5%86%99%E4%BD%9C%E6%8F%90%E7%A4%BA%E4%BB%A5%E6%8F%90%E9%AB%98%E6%B8%85%E6%99%B0%E5%BA%A6%E5%92%8C%E9%87%8D%E7%82%B9/</guid>
-      <description>介绍 使用关键字作为命令是生成编写提示的有效方法。例如，在在线平台Discord中，命令“/imagine”用于启动提示。同样，通过使用诸如“改写”、“继续”、“简化”、“关键思想”和“标题”等关键字，可以开始提示，鼓励作者专注于他们写作的特定方面。根据我的经验，这些关键字对于生成</description>
+      <title>2024年九款最佳AI提示生成器：功能与创造力兼备 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/202403/prompt/2024%E5%B9%B4%E4%B9%9D%E6%AC%BE%E6%9C%80%E4%BD%B3AI%E6%8F%90%E7%A4%BA%E7%94%9F%E6%88%90%E5%99%A8%E5%8A%9F%E8%83%BD%E4%B8%8E%E5%88%9B%E9%80%A0%E5%8A%9B%E5%85%BC%E5%A4%87--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 09:59:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/202403/prompt/2024%E5%B9%B4%E4%B9%9D%E6%AC%BE%E6%9C%80%E4%BD%B3AI%E6%8F%90%E7%A4%BA%E7%94%9F%E6%88%90%E5%99%A8%E5%8A%9F%E8%83%BD%E4%B8%8E%E5%88%9B%E9%80%A0%E5%8A%9B%E5%85%BC%E5%A4%87--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>随着人工智能技术的发展，提示生成器已成为创意人员、营销人员、作家和技术爱好者生成内容、解决问题或创建详细场景的重要工具。 进入 2024 年，众多人工智能提示生成器已在行业中崭露头角。以下是 2024 年 9 款最佳 AI 提示生成器，每款都具有独特的功能： 1.OpenAI的ChatGPT：这种对话式AI的发展</description>
     </item>
   </channel>
 </rss>
