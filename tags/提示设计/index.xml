@@ -6,8 +6,15 @@
     <description>Recent content in 提示设计 on GPT资讯  --  知识铺</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 24 Mar 2024 10:18:23 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Mar 2024 17:31:58 +0000</lastBuildDate>
     <atom:link href="https://gpt.zshipu.com/tags/%E6%8F%90%E7%A4%BA%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prompt进阶系列1面向大语言模型的自然语言编程框架 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240325/prompt/LangGPT-%E9%9D%A2%E5%90%91%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B%E6%A1%86%E6%9E%B6--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Sun, 24 Mar 2024 17:31:58 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240325/prompt/LangGPT-%E9%9D%A2%E5%90%91%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E7%BC%96%E7%A8%8B%E6%A1%86%E6%9E%B6--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>Prompt进阶系列1:LangGPT(从编程语言反思LLM的结构化可复用提示设计框架) 大语言模型 (Large Language Models, LLMs) 在不同领域都表现出了优异的性能。然而，对于非AI专家来说，制定高质量的提示来引导 LLMs 是目前AI应用领域的一项重要挑战。现有的提示工程研究已经提出了一些零散的优化原则，也有些研究</description>
+    </item>
     <item>
       <title>即时工程：2024年关键技能与薪资前景 -- 知识铺</title>
       <link>https://gpt.zshipu.com/post/20240325/prompt/%E5%8D%B3%E6%97%B6%E5%B7%A5%E7%A8%8B2024%E5%B9%B4%E5%85%B3%E9%94%AE%E6%8A%80%E8%83%BD%E4%B8%8E%E8%96%AA%E8%B5%84%E5%89%8D%E6%99%AF--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
