@@ -2,25 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>机器学习 on GPT资讯  --  知识铺</title>
-    <link>http://localhost:1313/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+    <link>https://gpt.zshipu.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
     <description>Recent content in 机器学习 on GPT资讯  --  知识铺</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 26 Mar 2023 09:39:31 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Mar 2024 09:08:35 +0000</lastBuildDate>
+    <atom:link href="https://gpt.zshipu.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>终极数据科学家备忘单</title>
-      <link>http://localhost:1313/post/%E7%BB%88%E6%9E%81%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%A4%87%E5%BF%98%E5%8D%95/</link>
-      <pubDate>Sun, 26 Mar 2023 09:39:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E7%BB%88%E6%9E%81%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%A4%87%E5%BF%98%E5%8D%95/</guid>
-      <description>有抱负或专业的数据科学家，你非常了解大量的SQL命令，算法，Excel函数和谷歌搜索进入你的工作。虽然您每天使用的那些都致力于内存，但有时您可能需要跳入需要新工具或所选编程语言的不同应用程序的项目。 输入：数据科学备忘单的终极汇编。这是您的首选资源，可让您在一个地方查看最常见的公式</description>
-    </item>
-    <item>
-      <title>数据科学和机器学习：自学路线图</title>
-      <link>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%92%8C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%87%AA%E5%AD%A6%E8%B7%AF%E7%BA%BF%E5%9B%BE/</link>
-      <pubDate>Sun, 26 Mar 2023 09:29:31 +0800</pubDate>
-      <guid>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%92%8C%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%87%AA%E5%AD%A6%E8%B7%AF%E7%BA%BF%E5%9B%BE/</guid>
-      <description>“没有数据是干净的，但大多数都是有用的。- 迪恩·阿博特 欢迎来到数据科学和机器学习的世界！这些令人兴奋的领域正在改变全球的行业，现在是潜入和开始学习的最佳时机。 但是你从哪里开始呢？有这么多资源和技术可供选择，知道将精力集中在何处可能会让人不知所措。 这就是为什么我们创建了这个自学路线</description>
+      <title>2024年学习人工智能的路线图 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240327/2024%E5%B9%B4%E5%AD%A6%E4%B9%A0%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%B7%AF%E7%BA%BF%E5%9B%BE--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Tue, 26 Mar 2024 09:08:35 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240327/2024%E5%B9%B4%E5%AD%A6%E4%B9%A0%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E8%B7%AF%E7%BA%BF%E5%9B%BE--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>想学习人工智能吗？ 黑客和程序员学习人工智能的免费课程 用 exlidraw 制作 那么，你想学习人工智能吗？但您不知道如何或从哪里开始？ 早在 2020 年，我就在互联网上撰写了前 20 名免费数据科学、机器学习和人工智能 MOOC。但我意识到，做很多课程并不是正确的方法。 为了摆脱教程地狱并真正学习，你必须亲自动手，从头</description>
     </item>
   </channel>
 </rss>
