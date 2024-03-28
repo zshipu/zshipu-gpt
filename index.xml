@@ -6,8 +6,36 @@
     <description>Recent content on GPT资讯  --  知识铺</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 26 Mar 2024 19:29:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Mar 2024 11:59:19 +0000</lastBuildDate>
     <atom:link href="https://gpt.zshipu.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI浪潮下的Prompt技术与应用 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240328/AI%E6%B5%AA%E6%BD%AE%E4%B8%8B%E7%9A%84Prompt%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Wed, 27 Mar 2024 11:59:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240328/AI%E6%B5%AA%E6%BD%AE%E4%B8%8B%E7%9A%84Prompt%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>最新一波AI浪潮已然到来 2022年8月，在美国科罗拉多州举办的新兴数字艺术家竞赛中，《太空歌剧院》获得“数字艺术/数字修饰照片”类别一等奖。参赛者没有绘画基础，利用AI工具Midjourney创作。 2022年8月19日，中国图象图形大会 CCIG 2022 在成都召开，百度正式发布 AI 艺术和创意辅助</description>
+    </item>
+    <item>
+      <title>借助GPT模型优化生活工作流程：工具、原理与应用 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240328/%E5%80%9F%E5%8A%A9GPT%E6%A8%A1%E5%9E%8B%E4%BC%98%E5%8C%96%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%B7%A5%E5%85%B7%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Wed, 27 Mar 2024 11:58:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240328/%E5%80%9F%E5%8A%A9GPT%E6%A8%A1%E5%9E%8B%E4%BC%98%E5%8C%96%E7%94%9F%E6%B4%BB%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%B7%A5%E5%85%B7%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>前言：探讨了如何借助GPT模型，优化日常生活和工作流程。介绍从AI工具，AI原理、AI的实际应用场景和如何提问等环节来举例让用户更理解GPT的基础知识从而上手。 工具篇 沉浸式翻译：最受欢迎的双语对照网页翻译插件 地址：https://immersivetranslate.com/ 它也</description>
+    </item>
+    <item>
+      <title>如何让大语言模型更好地帮助个人生活和工作 -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240327/%E5%A6%82%E4%BD%95%E8%AE%A9%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E6%9B%B4%E5%A5%BD%E5%9C%B0%E5%B8%AE%E5%8A%A9%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB%E5%92%8C%E5%B7%A5%E4%BD%9C--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Wed, 27 Mar 2024 11:57:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240327/%E5%A6%82%E4%BD%95%E8%AE%A9%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E6%9B%B4%E5%A5%BD%E5%9C%B0%E5%B8%AE%E5%8A%A9%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB%E5%92%8C%E5%B7%A5%E4%BD%9C--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>如何让大语言模型更好地帮助个人生活和工作？本篇文章将对此进行解析。在我们使用Prompt时，首先需要了解其整体的运转流程，以及关键特性，而其中的具体细节，我们看看作者的分享。 大模型的出现无疑能提升个人生产力，但具体如何提升，这方面身边其实很多人不知道，因此笔者打算从个人实践来分享</description>
+    </item>
+    <item>
+      <title>Prompt Engineering for Developers -- 知识铺</title>
+      <link>https://gpt.zshipu.com/post/20240327/Prompt-Engineering-for-Developers--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
+      <pubDate>Wed, 27 Mar 2024 11:56:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/post/20240327/Prompt-Engineering-for-Developers--%E7%9F%A5%E8%AF%86%E9%93%BA/</guid>
+      <description>简介 Prompt(提示)，最初是 NLP 研究者为下游任务设计出来的一种任务专属的输入形式或模板。在 ChatGPT 引发大语言模型新时代之后，Prompt 指与大模型交互输入的代称。 随着大模型的进展，Prompt Engineering是一个持久的探索过程。本文主要概括了我前段时间学习prompt的一些心</description>
+    </item>
     <item>
       <title>基于Prompt的NLP学习方法综述 -- 知识铺</title>
       <link>https://gpt.zshipu.com/post/20240327/%E5%9F%BA%E4%BA%8EPrompt%E7%9A%84NLP%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E7%BB%BC%E8%BF%B0--%E7%9F%A5%E8%AF%86%E9%93%BA/</link>
@@ -423,17 +451,17 @@
     </item>
     <item>
       <title></title>
-      <link>https://gpt.zshipu.com/post/20240327/Prompt-%E7%AE%80%E4%BB%8B%E5%8F%8A%E5%9C%A8%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E4%B8%8A%E7%9A%84%E4%BD%BF%E7%94%A8-%E7%9F%A5%E4%B9%8E/</link>
+      <link>https://gpt.zshipu.com/post/20240328/Prompt-%E7%AE%80%E4%BB%8B%E5%8F%8A%E5%9C%A8%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E4%B8%8A%E7%9A%84%E4%BD%BF%E7%94%A8-%E7%9F%A5%E4%B9%8E/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://gpt.zshipu.com/post/20240327/Prompt-%E7%AE%80%E4%BB%8B%E5%8F%8A%E5%9C%A8%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E4%B8%8A%E7%9A%84%E4%BD%BF%E7%94%A8-%E7%9F%A5%E4%B9%8E/</guid>
+      <guid>https://gpt.zshipu.com/post/20240328/Prompt-%E7%AE%80%E4%BB%8B%E5%8F%8A%E5%9C%A8%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E4%B8%8A%E7%9A%84%E4%BD%BF%E7%94%A8-%E7%9F%A5%E4%B9%8E/</guid>
       <description>简介 Prompt(提示)，最初是 NLP 研究者为下游任务设计出来的一种任务专属的输入形式或模板。在 ChatGPT 引发大语言模型新时代之后，Prompt 指与大模型交互输入的代称。 随着大模型的进展，Prompt Engineering是一个持久的探索过程。本文主要概括了我前段时间学习prompt的一些心</description>
     </item>
     <item>
       <title></title>
-      <link>https://gpt.zshipu.com/post/20240327/%E5%B9%B2%E8%B4%A7%E5%88%86%E4%BA%ABPrompt%E5%AE%9E%E8%B7%B5%E4%B8%AA%E4%BA%BA%E7%94%9F%E4%BA%A7%E5%8A%9B%E7%AF%87-%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB/</link>
+      <link>https://gpt.zshipu.com/post/20240328/%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82prompt-%E7%9F%A5%E4%B9%8E/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://gpt.zshipu.com/post/20240327/%E5%B9%B2%E8%B4%A7%E5%88%86%E4%BA%ABPrompt%E5%AE%9E%E8%B7%B5%E4%B8%AA%E4%BA%BA%E7%94%9F%E4%BA%A7%E5%8A%9B%E7%AF%87-%E8%85%BE%E8%AE%AF%E6%96%B0%E9%97%BB/</guid>
-      <description>如何让大语言模型更好地帮助个人生活和工作？本篇文章将对此进行解析。在我们使用Prompt时，首先需要了解其整体的运转流程，以及关键特性，而其中的具体细节，我们看看作者的分享。 大模型的出现无疑能提升个人生产力，但具体如何提升，这方面身边其实很多人不知道，因此笔者打算从个人实践来分享</description>
+      <guid>https://gpt.zshipu.com/post/20240328/%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82prompt-%E7%9F%A5%E4%B9%8E/</guid>
+      <description>在当今人工智能技术的蓬勃发展中，&amp;ldquo;prompt&amp;rdquo; 这一概念越来越引起关注。本文将为您深入解析什么是 prompt，以及它在与AI模型交互中的作用。您将了解到如何通过精心设计的指令来引导模型生成准确、有用的文本输出。从入门到高阶，您将逐步掌握如何优化 prompt</description>
     </item>
     <item>
       <title>归档</title>

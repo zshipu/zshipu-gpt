@@ -6,20 +6,153 @@
     <description>Recent content in Tags on GPT资讯  --  知识铺</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 26 Mar 2024 19:29:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Mar 2024 11:59:19 +0000</lastBuildDate>
     <atom:link href="https://gpt.zshipu.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>NLP</title>
-      <link>https://gpt.zshipu.com/tags/NLP/</link>
-      <pubDate>Tue, 26 Mar 2024 19:29:23 +0000</pubDate>
-      <guid>https://gpt.zshipu.com/tags/NLP/</guid>
+      <title>AI浪潮</title>
+      <link>https://gpt.zshipu.com/tags/AI%E6%B5%AA%E6%BD%AE/</link>
+      <pubDate>Wed, 27 Mar 2024 11:59:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/AI%E6%B5%AA%E6%BD%AE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ChatGPT</title>
+      <link>https://gpt.zshipu.com/tags/ChatGPT/</link>
+      <pubDate>Wed, 27 Mar 2024 11:59:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/ChatGPT/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt技术</title>
+      <link>https://gpt.zshipu.com/tags/Prompt%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Wed, 27 Mar 2024 11:59:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/Prompt%E6%8A%80%E6%9C%AF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>人工智能</title>
+      <link>https://gpt.zshipu.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
+      <pubDate>Wed, 27 Mar 2024 11:59:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自然语言处理</title>
+      <link>https://gpt.zshipu.com/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/</link>
+      <pubDate>Wed, 27 Mar 2024 11:59:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI工具</title>
+      <link>https://gpt.zshipu.com/tags/AI%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 27 Mar 2024 11:58:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/AI%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GPT模型</title>
+      <link>https://gpt.zshipu.com/tags/GPT%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Wed, 27 Mar 2024 11:58:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/GPT%E6%A8%A1%E5%9E%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>优化工作流程</title>
+      <link>https://gpt.zshipu.com/tags/%E4%BC%98%E5%8C%96%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Wed, 27 Mar 2024 11:58:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/%E4%BC%98%E5%8C%96%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>提示词框架</title>
+      <link>https://gpt.zshipu.com/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Wed, 27 Mar 2024 11:58:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%A1%86%E6%9E%B6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>翻译插件</title>
+      <link>https://gpt.zshipu.com/tags/%E7%BF%BB%E8%AF%91%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Wed, 27 Mar 2024 11:58:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/%E7%BF%BB%E8%AF%91%E6%8F%92%E4%BB%B6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM特性</title>
+      <link>https://gpt.zshipu.com/tags/LLM%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Wed, 27 Mar 2024 11:57:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/LLM%E7%89%B9%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt原理</title>
+      <link>https://gpt.zshipu.com/tags/Prompt%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Wed, 27 Mar 2024 11:57:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/Prompt%E5%8E%9F%E7%90%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt模板</title>
+      <link>https://gpt.zshipu.com/tags/Prompt%E6%A8%A1%E6%9D%BF/</link>
+      <pubDate>Wed, 27 Mar 2024 11:57:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/Prompt%E6%A8%A1%E6%9D%BF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>优化流程</title>
+      <link>https://gpt.zshipu.com/tags/%E4%BC%98%E5%8C%96%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Wed, 27 Mar 2024 11:57:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/%E4%BC%98%E5%8C%96%E6%B5%81%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>场景应用</title>
+      <link>https://gpt.zshipu.com/tags/%E5%9C%BA%E6%99%AF%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Wed, 27 Mar 2024 11:57:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/%E5%9C%BA%E6%99%AF%E5%BA%94%E7%94%A8/</guid>
       <description></description>
     </item>
     <item>
       <title>Prompt</title>
       <link>https://gpt.zshipu.com/tags/Prompt/</link>
-      <pubDate>Tue, 26 Mar 2024 19:29:23 +0000</pubDate>
+      <pubDate>Wed, 27 Mar 2024 11:56:19 +0000</pubDate>
       <guid>https://gpt.zshipu.com/tags/Prompt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>大模型</title>
+      <link>https://gpt.zshipu.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Wed, 27 Mar 2024 11:56:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>提示词注入</title>
+      <link>https://gpt.zshipu.com/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%B3%A8%E5%85%A5/</link>
+      <pubDate>Wed, 27 Mar 2024 11:56:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%B3%A8%E5%85%A5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>模型部署</title>
+      <link>https://gpt.zshipu.com/tags/%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Wed, 27 Mar 2024 11:56:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>迭代优化</title>
+      <link>https://gpt.zshipu.com/tags/%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Wed, 27 Mar 2024 11:56:19 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/%E8%BF%AD%E4%BB%A3%E4%BC%98%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NLP</title>
+      <link>https://gpt.zshipu.com/tags/NLP/</link>
+      <pubDate>Tue, 26 Mar 2024 19:29:23 +0000</pubDate>
+      <guid>https://gpt.zshipu.com/tags/NLP/</guid>
       <description></description>
     </item>
     <item>
@@ -48,13 +181,6 @@
       <link>https://gpt.zshipu.com/tags/%E4%BA%A4%E4%BA%92/</link>
       <pubDate>Tue, 26 Mar 2024 19:28:23 +0000</pubDate>
       <guid>https://gpt.zshipu.com/tags/%E4%BA%A4%E4%BA%92/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>人工智能</title>
-      <link>https://gpt.zshipu.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
-      <pubDate>Tue, 26 Mar 2024 19:28:23 +0000</pubDate>
-      <guid>https://gpt.zshipu.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</guid>
       <description></description>
     </item>
     <item>
@@ -216,13 +342,6 @@
       <link>https://gpt.zshipu.com/tags/%E7%94%9F%E6%88%90%E7%AE%97%E6%B3%95/</link>
       <pubDate>Tue, 26 Mar 2024 19:06:32 +0000</pubDate>
       <guid>https://gpt.zshipu.com/tags/%E7%94%9F%E6%88%90%E7%AE%97%E6%B3%95/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ChatGPT</title>
-      <link>https://gpt.zshipu.com/tags/ChatGPT/</link>
-      <pubDate>Tue, 26 Mar 2024 19:05:32 +0000</pubDate>
-      <guid>https://gpt.zshipu.com/tags/ChatGPT/</guid>
       <description></description>
     </item>
     <item>
@@ -503,13 +622,6 @@
       <link>https://gpt.zshipu.com/tags/%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
       <pubDate>Mon, 25 Mar 2024 09:08:40 +0000</pubDate>
       <guid>https://gpt.zshipu.com/tags/%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>自然语言处理</title>
-      <link>https://gpt.zshipu.com/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/</link>
-      <pubDate>Mon, 25 Mar 2024 09:08:40 +0000</pubDate>
-      <guid>https://gpt.zshipu.com/tags/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/</guid>
       <description></description>
     </item>
     <item>
